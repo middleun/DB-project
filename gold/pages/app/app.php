@@ -56,7 +56,7 @@
                 if($userlevel == 1){
               
               ?>        
-              <a href="#" class="commonBtn appLoadMore">Load More</a>
+              <button class="commonBtn appLoadMore">Load More</button>
               <a href="#" class="commonBtn toTop">Go To Top</a>
               <a href="/gold/pages/app/app_input_form.php" class="commonBtn">Upload Contents</a>
             </div>

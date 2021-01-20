@@ -86,8 +86,6 @@
 
           <div class="productBox clear">
             <div class="boxLeft">
-
-
               <!-- design image db connect  -->
               <?php                
                 $sql="select * from gold_de order by gold_de_num desc limit 4";
@@ -144,6 +142,8 @@
         </div>
       </section>
       <!-- end of product section -->
+
+
       <section class="contents ours">
         <div class="center clear">
           <!-- title with common style -->
@@ -177,9 +177,10 @@
                   $web_thumb=$web_row['gold_web_thumb'];
                   $web_title=$web_row['gold_web_tit'];
                   $web_desc=$web_row['gold_web_des'];  
-                  // $web_domain=$web_row['gold_web_dom'];                         
+                  // $web_domain=$web_row['gold_web_dom'];          
             
             ?>
+
             <div class="fashionImg">
               <div>
                 <img src="/gold/data/web_page/thumb/<?=$web_thumb?>" alt="" />
@@ -188,17 +189,17 @@
                 <a href="/gold/pages/web/web_detail.php?num=<?=$web_num?>">View Details</a>
               </div>
             </div>
-            <!-- looped box -->
+            <!-- looped WEB box -->
 
             <?php
                 }
          
             ?>
 
-
-
           </div>  
-          <!-- end of men fashion -->
+          <!-- end of web project -->
+
+
           <div class="fashionBox women">
             <div class="fashionTxt">
               <h2><em>app</em> project</h2>
@@ -208,27 +209,43 @@
               </p>
               <a href="#">view more</a>
             </div>
-            <div class="fashionImg">
-              <div>
-                <img src="img/product-type-1.jpg" alt="" />
-              </div>
-            </div>
-            <div class="fashionImg">
-              <div>
-                <img src="img/women-2.jpg" alt="" />
-              </div>
-            </div>
-            <div class="fashionImg">
-              <div>
-                <img src="img/product-type-2.jpg" alt="" />
-              </div>
-            </div>
-          </div>
 
-          <!-- end of women fashion -->
+            <?php
+                // include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+                $sql="select * from gold_app order by gold_app_num desc limit 3";
+
+                $app_result=mysqli_query($dbConn,$sql);
+
+                while($app_row=mysqli_fetch_array($app_result)){
+                  $app_num=$app_row['gold_app_num'];
+                  $app_thumb=$app_row['gold_app_thumb'];
+                  $app_tit=$app_row['gold_app_tit'];
+                  $app_des=$app_row['gold_app_des'];  
+                  // $web_domain=$web_row['gold_web_dom'];          
+            
+            ?>
+
+            <!-- looped APP box start -->
+            <div class="fashionImg">
+              <div>
+                <img src="/gold/data/app_page/app_thumb/<?=$app_thumb?>" alt="" />
+                <h2><?=$app_tit?></h2>
+                <em class="cutTxt"><?=$app_des?></em>
+                <a href="/gold/pages/app/app_detail.php?num=<?=$app_num?>">View Details</a>
+              </div>
+            </div>
+            <!-- looped APP box -->         
+          </div>
+          
+          <?php
+                }
+         
+          ?>
+
+          <!-- end of app project -->
         </div>
       </section>
-      <!-- end of ours section -->
+      <!-- end of web&app preview section -->
 
       <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/about.php" ?>
       
