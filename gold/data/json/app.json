@@ -1,0 +1,32 @@
+[
+    {
+        "appnum": "14",
+        "apptit": "Plant Store",
+        "appser": "AP2101_03",
+        "appdes": "So when is it okay to use lorem ipsum? First, lorem ipsum works well for staging. It's like the props in a furniture store\u2014filler text makes it look like someone is home. The same Wordpress template might eventually be home to a fitness blog, a photography website, or the online journal of a cupcake fanatic. <br \/>\r\n<br \/>\r\nLorem ipsum helps them imagine what the lived-in website might look like.<br \/>\r\n<br \/>\r\nOne word of caution: make sure your client knows that lorem ipsum is filler text. ",
+        "appmain": "app_main_003.png",
+        "appthumb": "app_003.png",
+        "appcli": "Appstore",
+        "appreg": "2021-01-19"
+    },
+    {
+        "appnum": "6",
+        "apptit": "Portfolio",
+        "appser": "AP2101_02",
+        "appdes": "Lorem Ipsum doesn\u2019t exist because people think the content is meaningless window dressing, only there to be decorated by designers who can\u2019t be bothered to read. Lorem Ipsum exists because words are powerful. <br \/>\r\n<br \/>\r\nIf you fill up your page with draft copy about your client\u2019s business, they will read it. They will comment on it. <br \/>\r\n<br \/>\r\nThey will be inexorably drawn to it. Presented the wrong way, draft copy can send your design review off the rails.",
+        "appmain": "app_main_001.png",
+        "appthumb": "app_001.png",
+        "appcli": "Appstore",
+        "appreg": "2021-01-19"
+    },
+    {
+        "appnum": "5",
+        "apptit": "Calory Checker",
+        "appser": "AP2101_01",
+        "appdes": "It's difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples. <br \/>\r\n<br \/>\r\nSo far he hasn't relocated where he once saw the passage, but the popularity of Cicero in the 15th century supports the theory that the filler text has been used for centuries.<br \/>\r\n<br \/>\r\nWhether a medieval typesetter chose to garble a well-known (but non-Biblical\u2014that would have been sacrilegious)",
+        "appmain": "app_main_001.png",
+        "appthumb": "app_001.png",
+        "appcli": "Appstore",
+        "appreg": "2021-01-19"
+    }
+]

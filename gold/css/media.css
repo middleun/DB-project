@@ -1,0 +1,348 @@
+@media screen and (max-width:1400px){
+    .topMain{width:100%;}
+
+}
+
+
+@media screen and (max-width:1200px){
+    .topMain .bannerBox{height:35vh;}
+    .topMain .headerBox{height:35vh;}
+
+    .topMain .sns ul{width:40%; margin:auto; float:none;}
+    .topMain .sns ul i.fa{width:30px; height:30px; font-size: 12px;}
+
+    .topMain .gnb ul li{padding:0 25px;}
+    .topMain .gnb ul a{font-size:14px;}
+
+    .center{padding:0 15px;}
+
+
+    .product .boxRight .productTxt>div>h2{font-size:25px;}
+    .product .boxRight .productTxt>div>p{font-size: 14px;}
+    .product .boxRight .productTxt>div>p.hide{display:none;}
+    .product .boxRight .productTxt>div>a{width:45%;}
+
+    .hasTitle .title .subTit .subLine{width:30%; }
+
+    
+    .hasTitle .title .subTit a.subLink{width:20%;}
+    
+    .topMain .logBox a{padding:0 15px; }
+
+}
+
+@media screen and (max-width:950px){
+/* .arrivals .arrivalBox .arrivalCon{height: 350px;} */
+
+ .topMain .gnb ul li{_width:16%; padding:0 16px; _justify-content: center;}
+
+ /* main page design project section style */
+ .arrivals .arrivalBox .arrivalCon{width:32%;}
+ .arrivals .arrivalCon .arrivalTxt h2{font-size: 20px;}
+ .arrivals .arrivalCon .arrivalTxt em{font-size:12px; }
+
+ .arrivals .arrivalCon .best a{font-size: 14px; padding: 5px 35px; }
+ .arrivals .arrivalCon .best p{font-size:20px; font-weight: 700; letter-spacing: 2px;}
+ 
+  /* main page web&app section style - 클래스명 수정 필요 */
+ .fashionBox{padding: 25px 0;}
+ .fashionBox>.fashionTxt h2{margin-bottom: 10px; font-size: 20px;}
+ .fashionBox>.fashionTxt p{display: none;}
+ .fashionBox>.fashionTxt a{padding:8px 25px; font-size: 12px;}
+
+ .fashionBox>.fashionImg>div>h2{font-size:16px; padding:5px 0 0 0;}
+ .fashionBox>.fashionImg>div>em{font-size:12px;}
+ .fashionBox>.fashionImg>div>a{font-size:12px; margin-top: 5px;}
+
+ .contact .contactBox{flex-direction: column; margin: 20px 0;}
+ .contact .contactBox>div{width:100%;}
+ .contact .contactBox>div.mapBox{height: 250px;}
+
+ .contact .formBox .form input,
+ .contact .formBox .form textarea{padding:10px;}
+ .contact .formBox .form .message>textarea{height: 250px;}
+ .contact .formBox .form a{padding: 10px 0;}
+
+ .hasTitle .title .subTit .subLine{width:26%;}
+ .hasTitle .title .subTit a.subLink{width:17%;}
+
+ /* join us page media style */
+ .joinBox{width:80%;}
+ .joinBox label{font-size:12px;}
+ .joinBox input{font-size: 12px;}
+
+ 
+ /* design page style */
+ .designBoxes .designBox{width:33.33%;}
+
+ /* design input form style */
+ .webDesingInput .titleSer p label{display:none;}
+ .webDesingInput .titleSer p input{width:100%;}
+
+ /* design detail page style */
+ .designRight{padding-left:0;}
+
+ /* web page style */
+ .deWeBoxes .deWeBox.webBox{width:50%;}
+
+ /* app page style */
+ .appBoxes .appBox,
+ .appBoxes .appBox-sizer{width:33.33%;}
+
+
+}
+
+@media screen and (max-width:800px){
+    .topMain{display:flex;flex-direction: column;}
+    .topMain>div:nth-child(1){order:0;}
+    .topMain>div:nth-child(2){order:2;}
+    .topMain>div:nth-child(3){order:1;}
+    .topMain>div:nth-child(4){order:3;}
+
+    .topMain .bannerBox{width:100%; float: none; height:20vh;}
+    .topMain .bannerBox .slogan h2{font-size: 5.5vw; }
+
+    .topMain .headerBox{width:100%; float: none; }
+
+    .topMain .sns{width:100%;float:none; height: 40px;}
+    .topMain .sns ul{width:50%; height:40px;}    
+    .topMain .gnb{width:100%;float:none;}
+    .topMain .gnb ul{width:100%;}
+    .topMain .gnb ul li{width:16.66%; padding:0; justify-content: center;}
+
+    .product .productBox{flex-direction: column;}
+    .product .productBox .boxLeft{width:100%; display: flex;flex-wrap: nowrap;}
+    .product .productBox .boxRight{width:100%;}
+    .product .boxRight .productTxt{text-align: center;}
+    .product .boxRight .productTxt>div>a{margin: auto;}
+
+
+    .fashionBox{flex-wrap: wrap;}
+    .fashionBox>div{width:50%;}
+    .fashionBox .fashionTxt h2{margin-bottom: 5px;text-align: center;}
+    .fashionBox .fashionTxt p{display: block;}
+
+    .topMain .loginWrap{width:100%; align-items:center;}
+
+    .topMain .logBox{height:40px; font-size: 12px; justify-content: center;}
+    .topMain .logBox a{padding:0 25px; }
+
+    .contents.about{padding:30px 0 20px;}
+
+    .about .aboutTxt{padding:20px 0 ;}
+    .about .sns{padding: 20px 0 0 0;}
+
+    .hasTitle .title .subTit .subLine{width:33%;}
+    .hasTitle .title .subTit a.subLink{width:21%;}
+
+
+    /* design page style */
+    .designBoxes .designBox .designTxt h2{font-size:16px; margin-bottom: 5px;}
+    .designBoxes .designBox .designTxt em{font-size:13px;}
+
+    /* design detail page style */
+    .deWeLeft{width:100%;float:none; margin-bottom: 20px;}
+    .detailCon{padding-right:0; width:70%; margin:auto;}
+    
+    .deWeRight{width:100%;float:none; padding:0 15%;}
+
+    .deWeRight .webLinks .subWebTxt em, 
+    .deWeRight .appLinks .subAppTxt em{font-size:12px;}
+
+    .deWeLeft{width:100%;}
+
+    a.commonBtn, button.commonBtn{padding:5px 0; font-size: 12px;}
+
+    /* app page style */
+    .appBoxes .appBox{padding: 3px;}
+    .appBoxes .appBox>div h2{font-size: 18px;}
+    .appBoxes .appBox>div a{padding: 5px 0;}
+
+
+   }
+
+
+
+@media screen and (max-width:700px){
+    .title{width:100%; float:none; text-align:center;}
+    .title h2{font-size:30px;}
+    .title .linkBox{width:100%; display:block; text-align: center; }
+    .title .line{display: none; }
+    .title a{display:block; width:100%; float:none; text-align:center;}
+
+
+    .arrivals .arrivalBox{flex-direction: column;justify-content: center;
+    align-items: center; padding: 30px 0;}
+    .arrivals .arrivalBox .arrivalCon{width:70%; margin-bottom: 10px;}
+
+    .product .productBox{margin: 30px 0 0;}
+
+
+    .hasTitle .title .subTit .subLine{width:60%; }
+    .hasTitle .title .subTit a.subLink{width:35%;}
+
+
+    /* join us page media style */
+    .joinBox{width:90%;}
+    .joinBox label{display:none;}
+
+    .joinBox input{width:100%; padding:8px;}
+    .joinBox .idInputBox input{width:74%;}
+
+    .joinBox .emailInputBox{padding-bottom: 10px;}
+    .joinBox .emailInputBox input.email1{width:40%;}
+    .joinBox .emailInputBox input.email2{width:50%;}
+    .joinBox .formBtns{margin-top: 10px;}
+
+
+    /* login page media style */
+    .loginBox{width:80%;}
+
+    .findInfo{justify-content: center;}
+
+    /* design detail page medial style */
+    .deWeDetail .title{width:100%; float:none; text-align:center; margin-bottom: 20px;}
+    .deWeDetail .title h2{font-size:30px;}
+    .deWeDetail .title .linkBox{width:100%; display:block; text-align: center;}
+    .deWeDetail .title .line{display: none; }
+    .deWeDetail .title a{display:block; width:100%; float:none; text-align:center;}
+
+
+    /* web page style */
+    .deWeBoxes .deWeBox .deWeTxt h2{font-size:18px; line-height: 0.5;}
+    .deWeBoxes .deWeBox .deWeTxt em{font-size:13px;}
+    .web .webBoxBtns{margin-top: 0;}
+    .web .webBoxBtns a{font-size:12px; padding:5px 0;}
+
+    .deWeRight{width:100%; float:none;}
+
+    .webTabBtns{text-align:center;}
+     
+    
+
+}
+
+@media screen and (max-width:600px){
+
+    /* design page style */
+    .designBoxes .designBox{width:50%;}
+
+    .btns{flex-wrap: wrap; justify-content: space-between;}
+    .btns>a.commonBtn{margin-right: 0; margin-top: 5px;}
+    .btns>a:nth-child(1){width:49.5%;}
+    .btns>a:nth-child(2){width:49.5%;}
+    .btns>a:nth-child(3){width:100%; background: #d0af51; 
+    color:#fff;}
+
+
+    /* design inputform style */
+
+    .webDesignInput .titleSer{flex-wrap:wrap; _flex-grow:1;}
+    .webDesignInput .titleSer p{width:49.5%; }
+    .webDesignInput .titleSer p.title_input{width:100%; margin-bottom: 10px; }
+    .webDesignInput .titleSer p.domain_input{width:100%; margin-bottom: 10px; }
+
+
+    .webDesignInput .uploadImgs{flex-wrap:wrap;}
+    .webDesignInput .uploadImgs .uploadBox{width:100%;}
+    .webDesignInput .uploadImgs .uploadBox.appImg{width:100%;}
+    .webDesignInput .uploadImgs .uploadBox.img2{margin:5px 0;}
+
+
+    .upload .btns .commonBtn{width:100%;}
+
+    .detailCon{width:90%;}
+
+    /* app page style */
+    .appBoxes .appBox,
+    .appBoxes .appBox-sizer{width:50%;}
+    .appBoxes .appBox>div{padding: 3px;}
+    .appBoxes .appBox>div h2{font-size: 14px;}
+   
+    
+}
+
+
+@media screen and (max-width:480px){
+    .center{padding:0 5px;}
+    .topMain .bannerBox .slogan{right:0; text-align: center;}
+    .topMain .bannerBox .slogan h2{font-size:7.5vw;}
+    .topMain .bannerBox .slogan hr{display:none;}
+    .topMain .bannerBox .slogan p{letter-spacing: 1px;}
+
+    .topMain .sns ul{width:70%;}
+    .topMain .sns ul i.fa{border-radius: 0;background: #aaa;}
+
+    .topMain .gnb{height: auto; padding:8px 20px;z-index: 999; position:relative;}
+    .topMain .gnb ul{display:none; position:absolute; top:100%;
+    left:0;}
+    .topMain .gnb ul li{float:none; width:100%; background: #000;
+    height: 45px; border-bottom:1px solid #d0af51;}
+    .topMain .gnb ul li:first-child{border-top:1px solid #d0af51;}
+
+
+
+    .mobileMenu{display: flex; z-index:999; }
+
+    .arrivals .arrivalBox .arrivalCon{width:90%; }
+
+    
+    .product .productBox .boxLeft{flex-wrap: wrap;}
+
+    .fashionBox{padding: 20px 0;}
+    .fashionBox>.fashionTxt h2{margin-bottom: 10px;}
+    .fashionBox>.fashionTxt p{display: none;}
+    .fashionBox .fashionTxt a{padding:8px 5px;}
+
+    .fashionBox>.fashionImg>div{padding:5px;}
+    .fashionBox>.fashionImg>div>em{display:none;}
+    .fashionBox>.fashionImg>div>a{font-size:12px; margin-top: 5px;}
+
+
+    .hasTitle .title{margin-bottom: 0;}
+    .hasTitle .title .subTit .subLine{width:60%; }
+    .hasTitle .title .subTit a.subLink{display:none;}
+
+    .about .aboutTxt{padding:30px 0;}
+    .about .aboutTxt p:nth-child(1){display:none;}
+
+
+
+    /* join us page media style */
+    .joinBox input{padding:5px; height: 35px;}
+    .joinBox .emailInputBox span{font-size: 14px;}
+    .joinBox button{height: 35px;}
+
+
+    /* login page medai style */
+    .loginBox{width:90%;}
+    .loginBox p input{font-size:12px; padding:8px 10px;}
+    .loginBox .loginBtns a{font-size: 12px; padding: 8px 0;}
+
+
+    .findInfo{width:100%; justify-content: center;}
+    .findInfo a{font-size: 12px;}
+
+
+    /* design page style */
+    .designBoxes .designBox .designTxt{padding:5px 0;}
+    .designBoxes .designBox .designTxt h2{font-size:14px;}
+    .designBoxes .designBox .designTxt em{display:none;}
+
+
+
+    /* design detail page style */
+    .detailCon{padding-right:0; width:90%; margin:auto;}
+
+   
+    .designRight{width:100%;float:none; padding:0 5%;}
+    .designRight .webTit h2{font-size:18px;}
+
+
+    /* web page style */
+    .deWeBoxes .deWeBox.webBox{width:100%;} 
+
+
+
+
+}

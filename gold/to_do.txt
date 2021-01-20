@@ -1,0 +1,12 @@
+1. 네비게이션 활성화 인텍스 변경✔
+2. design_upload.js 함수 리펙토링✔ 
+3. 파일 정리✔
+4. design_input_form.php 인풋 옵셋 맞춤
+5. 메인페이지 디자인섹션 글자 문단 자르기
+6. 웹페이지 완료 후 전체 파일 구조 설계 및 1차 호스팅 
+7. web page js load more 기능 리펙토링
+8. index.php 파일 fashion위치(현 web/app섹션) 클래스 변경
+9. resize 함수 한번만 실행 기능
+
+
+include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/db_connect.php';
