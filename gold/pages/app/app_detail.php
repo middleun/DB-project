@@ -2,22 +2,22 @@
 
     $app_detail_num=$_GET['num'];
 
-    //   include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
-    //   $sql="select * from gold_web where gold_web_num=$web_detail_num";
+      include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+      $sql="select * from gold_app where gold_app_num=$app_detail_num";
 
-    //   $web_detail_result=mysqli_query($dbConn, $sql);
-    //   $web_detail_row=mysqli_fetch_array($web_detail_result);
+      $app_detail_result=mysqli_query($dbConn, $sql);
+      $app_detail_row=mysqli_fetch_array($app_detail_result);
 
 
     
-    //   $web_detail_tit=$web_detail_row['gold_web_tit'];
-    //   $web_detail_ser=$web_detail_row['gold_web_ser'];
-    //   $web_detail_des=$web_detail_row['gold_web_des'];
+      $app_detail_tit=$app_detail_row['gold_app_tit'];
+      $app_detail_ser=$app_detail_row['gold_app_ser'];
+      $app_detail_des=$app_detail_row['gold_app_des'];
     //   $web_detail_img=$web_detail_row['gold_web_img'];
     //   $web_detail_mimg=$web_detail_row['gold_web_mimg'];
     // //   $web_detail_thumb=$row['gold_de_thumb'];
-    //   $web_detail_cli=$web_detail_row['gold_web_cli'];
-    //   $web_detail_reg=$web_detail_row['gold_web_reg'];
+      $app_detail_cli=$app_detail_row['gold_app_cli'];
+      $app_detail_reg=$app_detail_row['gold_app_reg'];
 
     // //   echo $design_detail_tit, $design_detail_ser, $design_detail_des, 
     // //   $design_detail_img1, $design_detail_img2, $design_detail_thumb, 
@@ -40,6 +40,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- light slider plugin link -->
+    <link rel="stylesheet" href="/gold/plugin/lightslider.css"/>
+    
     <!-- main css link -->
     <link rel="stylesheet" href="/gold/css/style.css" />
 
@@ -62,17 +65,46 @@
           <div class="appLeft deWeLeft">
             <!-- title with common style -->
             <div class="title">
-              <h2>Applications</h2>
+              <h2><?=$app_detail_tit?></h2>
               <div class="linkBox">
                 <span class="line"></span>
                 <a href="/gold/pages/app/app.php"> View all website</a>
               </div>
             </div>
             <!-- end of common title -->
-
-            <div class="detailCon">             
+ 
+            <div class="detailCon">      
+              <div class="appFrameBox">
+                <ul class="appMain appImgBox" id="appMain">
+                  <li>
+                    <img src="/gold/data/app_page/app_main/app_main_001.png" alt="">                  
+                  </li>
+                  <li>
+                    <img src="/gold/data/app_page/app_main/app_main_002.jpg" alt="">                  
+                  </li>
+                  <li>
+                    <img src="/gold/data/app_page/app_main/app_main_003.png" alt="">                  
+                  </li>                  
+                </ul>
+                <div class="appFrame">
+                    <img src="/gold/img/app_frame.png" alt="">
+                </div>
+               
+              </div>       
                                      
             </div>           
+
+            <p class="detailInfo">
+                  Projected By Gold Dev. Team / <?=$app_detail_ser?> / Used in <?=$app_detail_cli?> / 
+                  <?=$app_detail_reg?>
+            </p>
+
+            <div class="detailDesc">
+                <p><?=$app_detail_des?></p>
+                    
+                <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i>Get In Touch With...</a>
+            </div>
+
             <!-- end of web designContents -->
           </div>
           <!-- end of left box -->
@@ -99,10 +131,24 @@
 
     <!-- jquery frame work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/gold/plugin/lightslider.js"></script>
     <!-- main jqeury link -->
     <script src="/gold/js/custom.js"></script>
+    <script src="/gold/js/web_detail.js"></script>
+
     
-    <script src=/gold/js/web_detail.js></script>
+      
+    <script>
+      $(function(){
+        $("#appMain").lightSlider({
+            loop:true,
+            keyPress:true,
+            item:1
+        });
+
+      });
+    </script>
     
     
     

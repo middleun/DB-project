@@ -1,7 +1,7 @@
 <div class="detailWeb">
               <div class="webTit">
                 <h2>Recent Web Services</h2>
-                <a href="/gold/pages/web/web.php">Viwe All</a>
+                <a href="/gold/pages/web/web.php">View All</a>
               </div>
 
               <?php

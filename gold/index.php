@@ -207,7 +207,7 @@
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium.
               </p>
-              <a href="#">view more</a>
+              <a href="/gold/pages/app/app.php">view more</a>
             </div>
 
             <?php
@@ -234,15 +234,16 @@
                 <a href="/gold/pages/app/app_detail.php?num=<?=$app_num?>">View Details</a>
               </div>
             </div>
-            <!-- looped APP box -->         
-          </div>
-          
-          <?php
+            <!-- looped APP box -->     
+            <?php
                 }
          
-          ?>
+            ?>
+
+          </div>  
 
           <!-- end of app project -->
+          
         </div>
       </section>
       <!-- end of web&app preview section -->
