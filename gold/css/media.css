@@ -88,6 +88,9 @@
  /* app page style */
  .appBoxes .appBox,
  .appBoxes .appBox-sizer{width:33.33%;}
+ 
+ /* app detail page style */
+ .appFrameBox>span.frameTop{background-size: contain;}
 
 
 }
@@ -158,6 +161,9 @@
     .appBoxes .appBox>div h2{font-size: 18px;}
     .appBoxes .appBox>div a{padding: 5px 0;}
 
+     /* app detail page style */
+    .appFrameBox>span.frameTop{background-size: cover;}
+
 
    }
 
@@ -217,6 +223,9 @@
     .deWeRight{width:100%; float:none;}
 
     .webTabBtns{text-align:center;}
+
+     /* app detail page style */
+    .appFrameBox>span.frameTop{background-size: cover;}
      
     
 
@@ -342,6 +351,10 @@
     /* web page style */
     .deWeBoxes .deWeBox.webBox{width:100%;} 
 
+     /* app detail page style */
+    .appFrameBox{width: 70%;}
+    .appFrameBox>span.frameTop{background-size: cover;}
+    .appFrameBox>span.frameBottom{background-size: cover;}
 
 
 

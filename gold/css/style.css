@@ -18,7 +18,7 @@ input:focus,textarea:focus{background:#f8f8f8;}
 
 a.commonBtn,
 button.commonBtn{display:inline-block; padding: 10px 0; 
-_border: 1px solid #D0Af51; color: #D0Af51; text-transform: uppercase;
+border: 1px solid #D0Af51; color: #D0Af51; text-transform: uppercase;
 width:30%; text-align: center;margin-top: 10px; transition: all 0.4s;
 }
 

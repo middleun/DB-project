@@ -75,23 +75,25 @@
  
             <div class="detailCon">      
               <div class="appFrameBox">
-                <ul class="appMain appImgBox" id="appMain">
+                <ul id=appMain>
                   <li>
-                    <img src="/gold/data/app_page/app_main/app_main_001.png" alt="">                  
+                    <img src="/gold/data/app_page/app_main/app_main_001.png" alt="">
                   </li>
                   <li>
-                    <img src="/gold/data/app_page/app_main/app_main_002.jpg" alt="">                  
+                    <img src="/gold/data/app_page/app_main/app_main_002.jpg" alt="">
                   </li>
                   <li>
-                    <img src="/gold/data/app_page/app_main/app_main_003.png" alt="">                  
-                  </li>                  
+                    <img src="/gold/data/app_page/app_main/app_main_003.png" alt="">
+                  </li>
                 </ul>
-                <div class="appFrame">
-                    <img src="/gold/img/app_frame.png" alt="">
-                </div>
-               
-              </div>       
-                                     
+                <span class="frameTop"></span>
+                <span class="frameLeft"></span>
+                <span class="frameRight"></span>
+                <span class="frameBottom"></span>
+
+              </div>
+              
+            
             </div>           
 
             <p class="detailInfo">
@@ -141,10 +143,15 @@
       
     <script>
       $(function(){
+        // lightslider옵션 참조 : https://sseung-fire.tistory.com/18
+        // lightslider documentation : http://sachinchoolur.github.io/lightslider/examples.html
         $("#appMain").lightSlider({
             loop:true,
             keyPress:true,
-            item:1
+            item:1,
+            auto:true,
+            speed:500,
+            controls:false
         });
 
       });
