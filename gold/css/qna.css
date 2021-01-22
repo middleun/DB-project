@@ -1,1 +1,44 @@
-.qnaTitle span{font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 16px;}
+/* Qna Table Style */
+.qnaBoxes .qnaTable{width:80%; height:auto; margin:auto;}
+
+
+.qnaBoxes .qnaTable li:nth-child(odd){background: #eee;}
+.qnaBoxes .qnaTable li.qnaTitle{width:100%; height:auto; background:#d0af51; }
+
+.qnaBoxes .qnaTable li span{color:#fff; text-align: center; display:block; float: left; padding:5px 0;
+font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 16px;} 
+.qnaBoxes .qnaTable li span.qnaNum{width:10%;}
+.qnaBoxes .qnaTable li span.qnaId{width:15%;}
+.qnaBoxes .qnaTable li span.qnaTit{width:50%;}
+.qnaBoxes .qnaTable li span.qnaReg{width:15%;}
+.qnaBoxes .qnaTable li span.qnaHit{width:10%;}
+
+
+.qnaBoxes .qnaTable li.qnaContent span.qnaTit{text-align: center;}
+/* .qnaBoxes .qnaTable li.qnaContent{border-bottom: 1px solid #d0af51;} */
+.qnaBoxes .qnaTable li.qnaContent:last-child{border-bottom: 1px solid #d0af51;}
+.qnaBoxes .qnaTable li.qnaContent span,
+.qnaBoxes .qnaTable li.qnaContent span a{color: #838383;}
+
+/* Qna Search and Paging number Style */
+.qnaBoxes .searchPaging{width:80%; height: auto; margin:auto;}
+.qnaBoxes .searchPaging>div{width:50%; height: auto; float: left; margin-top: 25px;}
+.qnaBoxes .searchPaging>div.paging{display:flex; justify-content: flex-end;}
+
+
+.qnaBoxes .searchPaging .searchSelect{width:20%; border-radius: 0; outline: 0; padding:5px; 
+display: block; height:30px; border:1px solid #d0af51; float:left; color:#d0af51;}
+.qnaBoxes .qnaSearchInput{width:50%; height: 30px; padding: 5px; border:1px solid #d0af51;
+display:block; float:left; margin:0 5px;}
+.qnaBoxes .qnaSearchBtn{width:10%; height: 30px; background: #d0af51; color: #fff; font-size: 14px;
+border: 1px solid #d0af51; outline: 0; cursor: pointer;}
+
+
+.qnaBoxes .paging span{display:block; float: left; width: 30px; height: 30px; border: 1px solid #d0af51;
+color: #d0af51; justify-content: center; align-items: center; margin-left: 5px; text-align:center;
+transition: all 0.3s; cursor: pointer;}
+.qnaBoxes .paging span:hover,
+.qnaBoxes .paging span:active{background: #d0af51; color: #fff;}
+
+/* qna write box style */
+.qnaBoxes .writeBox{width:80%; border:1px solid #d0af51; padding: 5px; margin: auto; margin-top: 10px;}
