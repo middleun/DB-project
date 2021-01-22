@@ -105,7 +105,7 @@
               <?php
               }
               ?>                      
-            </div>
+          </div>
          <!-- end of center -->
        </section>
       

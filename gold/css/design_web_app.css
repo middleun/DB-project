@@ -186,4 +186,7 @@ background:url(/gold/img/frame_right.png) no-repeat right center; background-siz
 .appFrameBox>span.frameBottom{width:100%; height: 30px; bottom: 0; right: 0;
 background:url(/gold/img/frame_bottom.png) no-repeat bottom center; background-size: cover;}
 
-/* .lSAction{display:none;} */
+
+.appStoreBtns{width:100%; height: auto; text-align: center; margin-bottom:25px;}
+.appStoreBtns a{width:30%; display: inline-block;}
+.appStoreBtns a img{width:100%;}
