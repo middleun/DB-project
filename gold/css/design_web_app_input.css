@@ -24,7 +24,7 @@ margin-top: 10px; resize: none; padding: 10px;}
 .webDesignInput .uploadImgs{width:100%; height: auto; 
 display: flex; justify-content: space-between; flex-grow: 1; box-sizing:border-box;}
 .webDesignInput .uploadImgs .uploadBox{width: 33.2%; height: auto;
-position:relative; _flex:0.5 1 30%;}
+position:relative; _flex:0.5 1 30%; _margin-right:3px;}
 
 
 /* app page app upload img box */
