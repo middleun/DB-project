@@ -59,3 +59,10 @@ display:flex; justify-content: center; align-items: center;}
 
 .qnaBoxes .writeBox button{border:1px solid #d0af51; background: #d0af51; color:#fff; text-align:center;
 padding: 5px 30px; margin-top:5px; float:right;}
+
+
+/* qna view page style */
+.qnaView .wirterInfo{width:80%; margin:ato; }
+.qnaView .writerInfo p{color:#d0af51; font-weight: 300; padding:5px 0;}
+.qnaView .writeBox{margin:5px auto 0;}
+.qnaView button{margin-left:5px;}
