@@ -37,45 +37,44 @@
                     <div class="center">
                         <!-- contact title -->
                         <div class="title">
-                        <h2>Your Inquiry</h2>
-                        <div class="subTit">
-                            <span class="subLine"></span>
-                            <a href="#" class="subLink">View More Details</a>
-                        </div>
+                            <h2>Your Inquiry</h2>
+                            <div class="subTit">
+                                <span class="subLine"></span>
+                               
+                            </div>
                         </div>
                         <!-- end of contact title -->
 
                         <div class="qnaBoxes qnaView deWeBoxes">       
-                        <?php
+                            <?php
 
-                        $ans_num=$_GET['num'];
+                            $ans_num=$_GET['num'];
 
-                        include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
-                        $sql="select * from gold_qna where gold_qna_num=$ans_num";
+                            include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+                            $sql="select * from gold_qna where gold_qna_num=$ans_num";
 
-                        $ans_result=mysqli_query($dbConn, $sql);
-                        $ans_row=mysqli_fetch_array($ans_result);
+                            $ans_result=mysqli_query($dbConn, $sql);
+                            $ans_row=mysqli_fetch_array($ans_result);
 
-                        $ans_id=$ans_row['gold_qna_id'];
-                        $ans_tit=$ans_row['gold_qna_tit'];                   
-                        $ans_con=$ans_row['gold_qna_con'];
-                        $ans_reg=$ans_row['gold_qna_reg'];
-                        $ans_hit=$ans_row['gold_qna_hit'];                 
-                        
-                        $new_hit=$ans_hit + 1;
+                            $ans_id=$ans_row['gold_qna_id'];
+                            $ans_tit=$ans_row['gold_qna_tit'];                   
+                            $ans_con=$ans_row['gold_qna_con'];
+                            $ans_reg=$ans_row['gold_qna_reg'];
+                            $ans_hit=$ans_row['gold_qna_hit'];                 
+                            
+                            $new_hit=$ans_hit + 1;
 
-                        $sql="update gold_qna set gold_qna_hit=$new_hit where 
-                        gold_qna_num=$ans_num";
+                            $sql="update gold_qna set gold_qna_hit=$new_hit where 
+                            gold_qna_num=$ans_num";
 
-                        mysqli_query($dbConn, $sql);
-                        
+                            mysqli_query($dbConn, $sql);
+                            
 
-                        ?>
+                            ?>
 
                             <div class="writerInfo">
                                 <p>posted by <?=$ans_id?> No.<?=$ans_num?> / <?=$ans_reg?> /<?=$ans_hit?>Hits</p>
-                            </div>                                                                 
-                            
+                            </div>                                      
                                                       
                             <div class="writeBox clear">
                                     
@@ -98,8 +97,8 @@
                                 <?php
                                     }else{
                                 ?>        
-                                <button type="submit" class="ansSubmit"> 수정</button>
-                                <a href="/gold/pages/qna/qna.php">돌아가기</button>
+                                <a href="/gold/pages/qna/qna.php">돌아가기</a>
+                                <button type="submit" class="ansUbdate" onclick="ansUpdate()"> 수정</button>                               
                                 
                                                                
                                 <?php
@@ -108,17 +107,56 @@
                             
                             </div>                                            
                             <!-- end of writeBox -->
+                            <?php
+                            $ans_num=$_GET['num'];
+
+                            include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+                            
+                            $sql="select * from gold_ans where gold_ans_qna_num=$ans_num order by
+                            gold_ans_num desc";
+
+                            $rep_result=mysqli_query($dbConn, $sql);
+                            
+                            
+                            while($rep_row=mysqli_fetch_array($rep_result)){
+                            $rep_con=$rep_row['gold_ans_con'];
+                           
+                            ?>
+
+                            <div class="ansResult">
+                                <p class="adminId">관리자 답변</p>
+                                <p class="ansResultTxt"><?=$rep_con?></p>
+                            </div>
+                            <?php
+                            }
+                            ?>
 
                             <div class="answerBox">
-                                <form action="" method="post" name="ansInputForm"
-                                class="ansInputForm">
-                                    <textarea name="ansInputTxt" placeholder="답글을
-                                    작성해주세요"></textarea>
-                                    <p class="ansBtn">
-                                        <button type="submit">답글달기</button>
+                                <form action="/gold/php_process/pages/ans_insert.php?num=<?=$ans_num?>" method="post" name="ansInputForm"  class="ansInputForm">
+                                    <textarea name="ansInputTxt" placeholder="답글을 작성해주세요"></textarea>
+                                    <p class="ansBtnBox">
+                                   
+                                    <?php
+                                        // 로그인 안했을 때
+                                        if($userid==""){                                        
+                                    ?>
+                                    <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
+                                    <?php
+                                        // 로그인 했을 때
+                                            }else{
+                                    ?>        
+                                    
+                                    <button type="button" class="ansBtn" onclick="reply()"> 답글달기</button>                               
+                                        
+                                                                
+                                    <?php
+                                    }
+                                    ?>        
+                                      
                                     </p>    
                                 </form>
                             </div>
+                            <!-- end of answer Box -->
                         </div>
                         <!-- end of qnaBoxes -->
                         
@@ -147,12 +185,15 @@
                 alert('글쓰기를 하시려면 로그인이 필요합니다');
             }
             
-            function insertAns(){
+            // 수정하기 함수
+            function ansUpdate(){
+               
                 if(!document.ansForm.ansTitle.value){
                     alert("제목을 입력해주세요");
                     document.ansForm.ansTitle.focus();
                     return;
                 }
+                
                 if(!document.ansForm.ansTxt.value){
                     alert("내용을 입력해주세요");
                     document.ansForm.ansTxt.focus();
@@ -160,6 +201,18 @@
                 }
                 document.ansForm.submit();
             }
+
+            //답글달기 함수 
+            function reply(){
+               
+            
+               if(!document.ansInputForm.ansInputTxt.value){
+                   alert("내용을 입력해주세요");
+                   document.ansInputForm.ansInputTxt.focus();
+                   return;
+               }
+               document.ansInputForm.submit();
+           }
         
         </script>
       
