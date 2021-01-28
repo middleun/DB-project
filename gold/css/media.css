@@ -318,6 +318,10 @@
     border:1px solid #d0af51; justify-content: start; margin-bottom: 5px; }
     .qnaView .ansResult p.ansResultTxt{width:100%;}
 
+    .qnaView .ansResult p.adminId a{width:95%; text-align:center; margin-top:3px;
+        padding:5px 0;}
+    
+
 
 
     
@@ -435,7 +439,7 @@
     .qnaView .answerBox{width:90%; margin-top:20px;}
 
     .qnaView .ansResult{width:90%;}
-
+    
 
 
 

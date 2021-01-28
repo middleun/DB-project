@@ -175,8 +175,12 @@
             const qnaSubmit = document.querySelector(".qnaSubmit");
             // const alertLogin = document.querySelector(".alertLogin");
 
-            qnaSubmit.addEventListener("click", insertQna);
+            if(qnaSubmit != null){
+
+            qnaSubmit.addEventListener('click', insertQna);
             // alertLogin.addEventListener("click", plzLogin);
+
+            }
 
             function plzLogin(){
                 alert('글쓰기를 하시려면 로그인이 필요합니다');

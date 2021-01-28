@@ -120,12 +120,26 @@
                             
                             while($rep_row=mysqli_fetch_array($rep_result)){
                             $rep_con=$rep_row['gold_ans_con'];
+                            $rep_ans_num=$rep_row['gold_ans_num'];
                            
                             ?>
 
                             <div class="ansResult">
-                                <p class="adminId">관리자 답변</p>
+                                <p class="adminId">
+                                    <b>관리자 답변</b>
+                                    <?php
+                                    if($userlevel == 1){
+                                                                            
+                                    ?>
+
+                                    <a href="/gold/php_process/pages/ans_delete.php?num=<?=$rep_ans_num?>" class="ansDelete">삭제</a>
+
+                                    <?php
+                                    }
+                                    ?>
+                                </p>
                                 <p class="ansResultTxt"><?=$rep_con?></p>
+                               
                             </div>
                             <?php
                             }
@@ -173,14 +187,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- main jqeury link -->
         <script src="/gold/js/custom.js"></script>
-        <script src="/gold/js/web_design_page.js"></script>
+        <script src="/gold/js/web_design_page.js"></script> 
         <script>
-          const ansSubmit = document.querySelector(".ansSubmit");
-            // const alertLogin = document.querySelector(".alertLogin");
-
-            ansSubmit.addEventListener("click", insertAns);
-            // alertLogin.addEventListener("click", plzLogin);
-
+            //   const ansSubmit = document.querySelector(".ansBtn");
+            
+            // ansSubmit.addEventListener('click', insertAns);
+            
             function plzLogin(){
                 alert('글쓰기를 하시려면 로그인이 필요합니다');
             }
