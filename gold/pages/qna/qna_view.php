@@ -84,9 +84,7 @@
                                         <input type="text" name="ansTitle" id="ansTitle" placeholder="제목을 입력해주세요" value="<?=$ans_tit?>">
                                     </p>
                                     <p class="qnaTxtInput">
-                                        <textarea name="ansTxt" placeholder="내용을 입력해주세요">
-                                        <?=$ans_con?>
-                                        </textarea>
+                                        <textarea name="ansTxt" placeholder="내용을 입력해주세요"><?=$ans_con?></textarea>
                                     </p>
                                     
                                 </form>

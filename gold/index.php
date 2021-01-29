@@ -259,7 +259,7 @@
             <h2>Contact Us</h2>
             <div class="subTit">
               <span class="subLine"></span>
-              <a href="#" class="subLink">View More Details</a>
+       
             </div>
           </div>
           <!-- end of contact title -->
@@ -273,23 +273,27 @@
                 </iframe>
               </div>
             </div>
+
+            
             <div class="formBox">
-              <form action="abc.php" method="post" class="form" name="form">
+              <form action="/gold/php_process/pages/msg_insert.php" method="post" class="form" name="msgForm">
                 <p class="nameMail">
-                  <input type="text" placeholder="Your Name" />
-                  <input type="text" placeholder="Your Email" />
+                  <input type="text" name="msgName" placeholder="Your Name" />
+                  <input type="text" name="msgEmail" placeholder="Your Email" />
                 </p>
                 <p class="subject">
-                  <input type="text" placeholder="Subject" />
+                  <input type="text" name="msgTit" placeholder="Subject" />
                 </p>
                 <p class="message">
-                  <textarea placeholder="Your Message"></textarea>
+                  <textarea name="msgTxt" placeholder="Your Message"></textarea>
                 </p>
                 <p>
-                  <a href="#">Send Message</a>
+                  <a href="#" class="msgSend" onclick="msgSend" >Send Message</a>
+                  
                 </p>
               </form>
             </div>
+           
           </div>
         </div>
       </section>
@@ -348,11 +352,42 @@
            });
            cutTxt()
 
-        }
-
-      
+        }      
 
       });
+    </script>
+    
+    <!--formBox 메세지 입력기능 경고팝업  -->
+    <script>
+      const msgSendBtn = document.querySelector(".msgSend");                    
+
+      msgSendBtn.addEventListener('click', msgSend);                    
+              
+      function msgSend(e){
+        e.preventDefault();
+        if(!document.msgForm.msgName.value){
+          alert("이름을 입력해주세요");
+          document.msgForm.msgName.focus();
+          return;
+        }
+        if(!document.msgForm.msgEmail.value){
+              alert("이메일을 입력해주세요");
+              document.msgForm.msgEmail.focus();
+              return;
+        }
+
+        if(!document.msgForm.msgTit.value){
+            alert("제목을 입력해주세요");
+            document.msgForm.msgTit.focus();
+            return;
+        }
+        if(!document.msgForm.msgTxt.value){
+            alert("내용을 입력해주세요");
+            document.msgForm.msgTxt.focus();
+             return;
+        }
+        document.msgForm.submit();
+        }
     </script>
   
   </body>

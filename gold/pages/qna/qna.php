@@ -40,7 +40,7 @@
                         <h2>Your Inquiry</h2>
                         <div class="subTit">
                             <span class="subLine"></span>
-                            <a href="#" class="subLink">View More Details</a>
+                            
                         </div>
                         </div>
                         <!-- end of contact title -->
@@ -57,14 +57,26 @@
                             <!-- end of qna table -->
                             <div class="searchPaging clear">
                                 <div class="search">
-                                    <form action="abc.php" name="qnaSearch" class="clear qnaSearch">
+                                    <form action="/gold/pages/qna/qna_search_result.php" method="post" name="qnaSearch" class="clear qnaSearch">
                                         <select name="searchSelect" id="" class="searchSelect">
                                             <option value="qnaSearchId">아이디</option>
                                             <option value="qnaSearchTitle">제목</option>
                                         </select>
                                         <input type="text" name="qnaSearchInput" placeholder="검색어를 입력해주세요"
                                         class="qnaSearchInput">
-                                        <button type="button" class="qnaSearchBtn"><i class="fa fa-search"></i></button>
+                                        <button type="button" class="qnaSearchBtn"><i class="fa fa-search" onclick="search_check()"
+                                        ></i></button>
+                                        <script>
+                                            function search_check(){
+
+                                                if(!document.qnaSearch.qnaSearchInput.value){
+                                                    alert('검색어를 입력해주세요');
+                                                    document.qnaSearch.qnaSearchInput.focus();
+                                                    return;
+                                                }
+                                                document.qnaSearch.submit();
+                                            }                                        
+                                        </script>
                                     </form>
 
                                 </div>

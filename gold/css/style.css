@@ -10,7 +10,8 @@ body{font-size:14px; font-family: 'Open Sans', sans-serif;}
 ol,ul{list-style: none;}
 a{text-decoration: none; color: #111;}
 img{display: block;}
-button, input, textarea{outline: 0; font-family: 'Lato';}
+button, input, textarea, select{outline: 0; font-family: 'Lato'; 
+-webkit-appearance: none; background:#fff; border-radius:0;}
 input::placeholder,textarea::placeholder{color:#D0Af51;}
 input:focus,textarea:focus{background:#f8f8f8;}
 

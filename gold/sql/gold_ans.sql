@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 21-01-27 04:42
+-- 생성 시간: 21-01-29 02:17
 -- 서버 버전: 10.4.16-MariaDB
 -- PHP 버전: 7.4.12
 
@@ -35,6 +35,16 @@ CREATE TABLE `gold_ans` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- 테이블의 덤프 데이터 `gold_ans`
+--
+
+INSERT INTO `gold_ans` (`gold_ans_num`, `gold_ans_qna_num`, `gold_ans_con`, `gold_ans_reg`) VALUES
+(1, 2, '12345', '2021-01-28'),
+(3, 2, '12345', '2021-01-28'),
+(5, 11, 'okok', '2021-01-28'),
+(6, 11, '답글2개?', '2021-01-28');
+
+--
 -- 덤프된 테이블의 인덱스
 --
 
@@ -52,7 +62,7 @@ ALTER TABLE `gold_ans`
 -- 테이블의 AUTO_INCREMENT `gold_ans`
 --
 ALTER TABLE `gold_ans`
-  MODIFY `gold_ans_num` int(11) NOT NULL AUTO_INCREMENT COMMENT '고유번호';
+  MODIFY `gold_ans_num` int(11) NOT NULL AUTO_INCREMENT COMMENT '고유번호', AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
