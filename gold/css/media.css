@@ -193,11 +193,7 @@
     .qnaView .ansResult p{font-size: 12px;}
 
 
-
-
    }
-
-
 
 @media screen and (max-width:700px){
     .title{width:100%; float:none; text-align:center;}
@@ -260,7 +256,7 @@
     /* qna page style */
     .qnaBoxes .qnaTable li span{font-size: 12px;}
     .qnaBoxes .searchSelect{height:25px; font-size:12px;}
-    .qnaBoxes .searchinput{height:25px; font-size:12px;}
+    .qnaBoxes .qnaSearchInput{height:25px; font-size:12px;}
 
     
 
@@ -404,8 +400,10 @@
     .detailCon{padding-right:0; width:90%; margin:auto;}
 
    
-    .designRight{width:100%;float:none; padding:0 5%;}
-    .designRight .webTit h2{font-size:18px;}
+    .deWeRight{width:100%;float:none; padding:0 5%;}
+    .deWeRight .webTit h2,
+    .deWeRight .appTit h2
+    {font-size:18px;}
 
 
     /* web page style */
@@ -429,7 +427,7 @@
     .qnaBoxes .searchPaging{width:90%; }
     .qnaBoxes .searchPaging .searchSelect{width:calc(30% - 1px);}
     .qnaBoxes .qnaSearchInput{width:70%; margin:0;}
-    .qnaBoxes .qnaSearchBtn{width:100%; margin-top:2px;}
+    .qnaBoxes .qnaSearchBtn{width:100%; margin-top:5px;}
 
     .qnaBoxes .writeBox{width:90%; margin:20px auto 0;}
     
