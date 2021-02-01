@@ -132,7 +132,7 @@ web detail page style
 border: 1px solid #d0af51; color:#d0af51; padding:10px; transition: all 0.4s;
 cursor: pointer; }
 .webDetail .webTabBtns button:hover,
-.webDetail .webTabBtns button:active
+.webDetail .webTabBtns button.active
 {color:#fff; background:#d0af51;}
 
 /* pc frame style */

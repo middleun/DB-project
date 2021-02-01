@@ -17,6 +17,6 @@ transition: all 0.4s;}
 
 .findInfo{width:60%; height:auto; margin:auto; padding:10px; display: flex;
 justify-content: flex-end;}
-.findInfo a{padding: 0 20px; border-left:1px solid #d0af51;}
+.findInfo a{padding: 0 20px; border-left:1px solid #d0af51; color:#d0af51;}
 .findInfo a:hover{text-decoration: underline;}
 .findInfo a:first-child{border-left: 0;}

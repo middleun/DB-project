@@ -36,7 +36,7 @@
             <h2>LOGIN</h2>
             <div class="subTit">
               <span class="subLine"></span>
-              <a href="#" class="subLink">View More Details</a>
+              
             </div>
         </div>
         <!-- end of login title -->

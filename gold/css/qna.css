@@ -33,12 +33,12 @@ display: block; height:30px; border:1px solid #d0af51; float:left; color:#d0af51
 
 .qnaBoxes .paging span{display:flex; width: 30px; height: 30px; border: 1px solid #d0af51; color: #d0af51; justify-content: center; align-items: center; margin-left: 5px; text-align:center; transition: all 0.3s; cursor: pointer; line-height: 1.9;}
 .qnaBoxes .paging span:hover,
-.qnaBoxes .paging span:active{background: #d0af51; color: #fff;}
+.qnaBoxes .paging span.active{background: #d0af51; color: #fff;}
 
 /* qna write box style */
 .qnaBoxes .writeBox{width:80%; margin: 50px auto 0; }
 .qnaBoxes .writeBox .qnaGuide{width:100%; height:auto; margin-bottom: 5px;}
-.qnaBoxes .writeBox .qnaGuide span{padding-right:10px; border-right:2px solid #d0af51; color:#d0af51; font-weight: 600;}
+.qnaBoxes .writeBox .qnaGuide span{padding-right:10px; border-right:2px solid #d0af51; color:#d0af51; font-weight: 600; font-size:14px;}
 .qnaBoxes .writeBox .qnaGuide span a{color:#d0af51; font-weight: 600;  }
 .qnaBoxes .writeBox .qnaGuide span:last-child{border-right:0; padding-left:5px; } 
 
