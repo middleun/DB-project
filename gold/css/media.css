@@ -93,8 +93,20 @@
  .appFrameBox>span.frameTop{background-size: contain;}
 
  /* qna page style */
- .qnaBoxes .searchPaging .searchSelect{width:25%;}
- .qnaBoxes .searchPaging .searchInput{width:60%;}
+ .searchPaging .searchSelect{width:25%;}
+ .qnaSearchInput,
+ .adminSearchInput{width:60%;}
+
+ /* admin view page style */
+ .admin .adminTabs button{padding:10px 20px;}
+
+ .admin .msgTable li span.msgNum{width:10%;}
+ .admin .msgTable li span.msgName{width:15%;}
+ .admin .msgTable li span.msgTit{width:40%;}
+ .admin .msgTable li span.msgReg{width:25%;}
+ .admin .msgTable li span.msgEmail{display:none;}
+
+
 
 
 
@@ -170,10 +182,12 @@
     .appFrameBox>span.frameTop{background-size: cover;}
 
     /* qna page style */
-    .qnaBoxes .searchPaging>div{width:100%;}
-    .qnaBoxes .qnaSearch{display:flex; justify-content: space-evenly;}
-    .qnaBoxes .qnasearchBtn{width:10%;}
-    .qnaBoxes .searchPaging>div.paging{justify-content: center;}
+    .searchPaging>div{width:100%;}
+    .qnaSearch,
+    .adminSearch{display:flex; justify-content: space-evenly;}
+    .qnasearchBtn,
+    .adminSearchBtn{width:10%;}
+    .searchPaging>div.paging{justify-content: center;}
 
     .qnaBoxes .writeBox .qnaGuide span{font-size:12px;}
 
@@ -191,6 +205,9 @@
 
     
     .qnaView .ansResult p{font-size: 12px;}
+
+ 
+
 
 
    }
@@ -255,9 +272,26 @@
 
     /* qna page style */
     .qnaBoxes .qnaTable li span{font-size: 12px;}
-    .qnaBoxes .searchSelect{height:25px; font-size:12px;}
-    .qnaBoxes .qnaSearchInput{height:25px; font-size:12px;}
+    .searchSelect{height:25px; font-size:12px;}
+    .qnaSearchInput,
+    .adminSearchInput{height:25px; font-size:12px;}
+    .qnaSearchBtn, 
+    .adminSearchBtn{height:25px;}
 
+    /* admin view page style */
+    .admin .adminTabs button{padding:5px 10px; font-size:12px;}
+
+    .admin .msgTable{margin:10px auto 0;}
+
+    .admin .msgTable li span{font-size:12px; padding:7px 0;}
+    .admin .msgTable li span.msgNum{width:15%;}
+    .admin .msgTable li span.msgName{width:20%;}
+    .admin .msgTable li span.msgTit{width:50%;}
+    .admin .msgTable li span.msgReg{display:none;}
+    .admin .msgTable li span.msgDelete{width:15%;}
+
+    /* .adminPanel .adminSearch{width:100%;justify-content: space-between; }   */
+        
     
 
 }
@@ -321,6 +355,13 @@
     .qnaView .ansResult p.adminId a{width:95%; text-align:center; margin-top:3px;
         padding:5px 0;}
     
+    /* admin page style */
+    .admin .adminTabs{display:flex; justify-content: center;}
+    .admin .adminTabs button{display:block; width:40px; height:40px; margin:0 2px;}
+    .admin .adminTabs button i{display:inline; font-size:18px;}
+    .admin .adminTabs button i.fa-mobile{font-size:25px;}
+    .admin .adminTabs button b{display:none;}
+
 
 
 
@@ -423,11 +464,14 @@
     .qnaBoxes .qnaTable li span.qnaHit{display:none;}
     .qnaBoxes .qnaTable li span.qnaTit{width:60%;}
 
-    .qnaBoxes .qnaSearch{flex-wrap: wrap; }
-    .qnaBoxes .searchPaging{width:90%; }
-    .qnaBoxes .searchPaging .searchSelect{width:calc(30% - 1px);}
-    .qnaBoxes .qnaSearchInput{width:70%; margin:0;}
-    .qnaBoxes .qnaSearchBtn{width:100%; margin-top:5px;}
+    .qnaSearch,
+    .adminSearch{flex-wrap: wrap; }
+    .searchPaging{width:90%; }
+    .searchPaging .searchSelect{width:calc(30% - 1px);}
+    .qnaSearchInput,
+    .adminSearchInput{width:70%; margin:0;}
+    .qnaSearchBtn,
+    .adminSearchBtn{width:100%; margin-top:5px;}
 
     .qnaBoxes .writeBox{width:90%; margin:20px auto 0;}
     
@@ -442,6 +486,16 @@
 
     .qnaView .ansResult{width:90%;}
     
+
+    /* admin page style */
+
+    .admin .msgTable{width:90%; }
+
+    .admin .msgTable li span.msgNum{display:none;}
+    .admin .msgTable li span.msgName{width:20%;}
+    .admin .msgTable li span.msgTit{width:60%;}
+    .admin .msgTable li span.msgDelete{width:20%;}
+
 
 
 

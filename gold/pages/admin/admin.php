@@ -16,11 +16,14 @@
         <!-- design css link -->
         <link rel="stylesheet" href="/gold/css/design_web_app.css">
         <!-- qna css link -->
+        <link rel="stylesheet" href="/gold/css/qna.css">
+        <!-- admin css link -->
         <link rel="stylesheet" href="/gold/css/admin.css">
         <!-- animation css link -->
         <link rel="stylesheet" href="/gold/css/animation.css" />
         <!-- media query style css link -->
         <link rel="stylesheet" href="/gold/css/media.css" />
+
         
     </head>
     <body>
@@ -44,11 +47,11 @@
             <section class="contents admin hasTitle">
                     <div class="center">
                         <div class="adminTabs">
-                            <button type="button" class="active">메세지 관리</button>
-                            <button type="button">회원 관리</button>
-                            <button type="button">WEB 관리</button>
-                            <button type="button">APP 관리</button>
-                            <button type="button">Q&A 관리</button>
+                            <button type="button" class="active"><i class="fa fa-envelope"></i><b>메세지 관리</b></button>
+                            <button type="button"><i class="fa fa-user"></i><b>회원 관리</b></button>
+                            <button type="button"><i class="fa fa-desktop"></i><b>WEB 관리</b></button>
+                            <button type="button"><i class="fa fa-mobile"></i><b>APP 관리</b></button>
+                            <button type="button"><i class="fa fa-comments-o"></i><b>Q&A 관리</b></button>
                         </div>
                       
                         <div class="msgTab adminPanel">
@@ -85,10 +88,10 @@
                                     <li class="msgContents clear">
                                         <span class="msgNum"><?=$msg_num?></span>
                                         <span class="msgName"><?=$msg_name?></span>
-                                        <span class="msgTit"><a href="#"><?=$msg_tit?></a></span>
+                                        <span class="msgTit"><a href="/gold/pages/admin/admin_view.php?num=<?=$msg_num?>"><?=$msg_tit?></a></span>
                                         <span class="msgReg"><?=$msg_reg?></span>
                                         <span class="msgEmail"><?=$msg_email?></span>
-                                        <span class="msgDelete"><a href="#">삭제</a></span>
+                                        <span class="msgDelete"><a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>">삭제</a></span>
                                     </li>    
                                     
                                     <?php
@@ -96,9 +99,37 @@
                                     ?>
                                                                                       
                                 </ul>
-                            </div>                                           
-                        
-                        </div>
+                            </div>  
+                            <!--end of msg table  -->
+                            <div class="searchPaging clear">
+                                <div class="search">
+                                    <form action="/gold/pages/admin/msg_search_result.php" method="post" name="adminSearch" class="clear adminSearch">
+                                        <select name="searchSelect" id="" class="searchSelect">
+                                            <option value="adminSearchId">이름</option>
+                                            <option value="adminSearchTitle">제목</option>
+                                        </select>
+                                        <input type="text" name="adminSearchInput" placeholder="검색어를 입력해주세요"
+                                        class="adminSearchInput">
+                                        <button type="button" class="adminSearchBtn"><i class="fa fa-search" onclick="admin_search_check()"
+                                        ></i></button>
+                                        <script>
+                                            function admin_search_check(){
+                                                 if(!document.adminSearch.adminSearchInput.value){
+                                                    alert('검색어를 입력해주세요');
+                                                    document.adminSearch.adminSearchInput.focus();
+                                                    return;
+                                                }
+                                                document.adminSearch.submit();
+                                            }                                        
+                                        </script>
+                                    </form>
+
+                                </div>
+                                <!-- end of search -->
+                            
+                            </div>
+                            <!-- end of search Page -->
+                        </div>    
                         <!-- end of msg tab -->
 
                         <div class="memberTab adminPanel">

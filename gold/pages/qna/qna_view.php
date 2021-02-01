@@ -37,7 +37,7 @@
                     <div class="center">
                         <!-- contact title -->
                         <div class="title">
-                            <h2>Your Inquiry</h2>
+                            <h2>View Inquiry</h2>
                             <div class="subTit">
                                 <span class="subLine"></span>
                                
