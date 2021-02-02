@@ -8,7 +8,7 @@ padding:50px 0; font-weight: 600; font-family:'Noto Sans KR'; color:#838383;}
 /* admin page main tabs style */
 .admin .adminTabs{width:80%; height:auto; margin:auto; text-align:center; }
 .admin .adminTabs button{border:1px solid #d0af51; font-weight:600; background:#fff;
-padding:10px 30px; transition:all 0.4s; color:#d0af51; cursor: pointer;}
+padding:10px 40px; transition:all 0.4s; color:#d0af51; cursor: pointer;}
 .admin .adminTabs button i{font-style:normal ; display:none;}
 .admin .adminTabs button:hover,
 .admin .adminTabs button.active{background:#d0af51; color:#fff;}
@@ -74,4 +74,6 @@ color:#838383; text-align: center; padding: 3px 0;}
 border:1px solid #d0af51; cursor: pointer;}
 
 .memberTab .adminViewBtns{margin-top:10px;}
+
+
 

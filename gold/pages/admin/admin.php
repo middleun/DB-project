@@ -47,11 +47,9 @@
             <section class="contents admin hasTitle">
                     <div class="center">
                         <div class="adminTabs">
-                            <button type="button" class="active"><i class="fa fa-envelope"></i><b>메세지 관리</b></button>
-                            <button type="button"><i class="fa fa-user"></i><b>회원 관리</b></button>
-                            <button type="button"><i class="fa fa-desktop"></i><b>WEB 관리</b></button>
-                            <button type="button"><i class="fa fa-mobile"></i><b>APP 관리</b></button>
-                            <button type="button"><i class="fa fa-comments-o"></i><b>Q&A 관리</b></button>
+                            <button type="button" class="active">메세지 관리</button>
+                            <button type="button">회원 관리</button>                            
+                            <button type="button">Q&A 관리</button>
                         </div>
                       
                         <div class="msgTab deWeBoxes adminPanel">
@@ -103,10 +101,10 @@
                             <!--end of admin table  -->
                             <div class="searchPaging clear">
                                 <div class="search">
-                                    <form action="/gold/pages/admin/msg_search_result.php" method="post" name="adminSearch" class="clear adminSearch">
+                                    <form action="/gold/pages/admin/search_result.php?key=msg_result" method="post" name="adminSearch" class="clear adminSearch">
                                         <select name="searchSelect" id="" class="searchSelect">
                                             <option value="adminSearchId">이름</option>
-                                            <option value="adminSearchTitle">제목</option>
+                                            <option value="adminSearchName">제목</option>
                                         </select>
                                         <input type="text" name="adminSearchInput" placeholder="검색어를 입력해주세요"
                                         class="adminSearchInput">
@@ -185,7 +183,7 @@
                             <!-- end of admin table -->
                             <div class="searchPaging clear">
                                 <div class="search">
-                                    <form action="/gold/pages/admin/mem_search_result.php" method="post" name="memberSearch" class="clear adminSearch">
+                                    <form action="/gold/pages/admin/search_result.php?key=mem_result" method="post" name="memberSearch" class="clear adminSearch">
                                         <select name="searchSelect" id="" class="searchSelect">
                                             <option value="memberSearchId">아이디</option>
                                             <option value="memberSearchName">이름</option>
@@ -214,11 +212,7 @@
                     
                         </div>
                         <!-- end of memberTab -->
-
-
-
-                        <div class="webTab deWeBoxes adminPanel">web Tab</div>
-                        <div class="appTab deWeBoxes adminPanel">app Tab</div>
+                       
                         <div class="qnaTab deWeBoxes adminPanel">qna Tab</div>
 
                         

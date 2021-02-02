@@ -108,8 +108,7 @@
                 </p>
 
                 <div class="detailDesc">
-                    <p><?=$web_detail_des?></p>
-                    
+                    <p><?=$web_detail_des?></p>                    
                     <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i>Get In Touch With...</a>
                 </div>
 
