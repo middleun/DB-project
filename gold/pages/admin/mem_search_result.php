@@ -50,58 +50,62 @@
                         </div>
                         <!-- end of contact title -->
 
-                        <div class="msgTab deWeBoxes adminPanel">
+                        <div class="memberTab deWeBoxes adminPanel">
                             <div class="adminTable">
                                 <ul class="adminList">
 
                                      <li class="adminTitle clear">
-                                        <span class="msgNum">번호</span>
-                                        <span class="msgName">이름</span>
-                                        <span class="msgTit">제목</span>
-                                        <span class="msgReg">등록일</span>
-                                        <span class="msgEmail">이메일</span>
-                                        <span class="msgDelete">삭제</span>
+                                        <span class="memNum">번호</span>
+                                        <span class="memId">아이디</span>
+                                        <span class="memName">이름</span>
+                                        <span class="memLevel">레벨</span>
+                                        <span class="memPoint">포인트</span>
+                                        <span class="memUpdate">수정</span>
+                                        <span class="memDelete">삭제</span>
                                     </li>      
 
                                         <?php
-                                        $msg_search_select=$_POST['searchSelect'];
-                                        $msg_search_input=$_POST['adminSearchInput'];
+                                        $mem_search_select=$_POST['searchSelect'];
+                                        $mem_search_input=$_POST['memberSearchInput'];
 
                                         // echo $search_select, $search_input;
 
                                         include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
 
-                                        if($msg_search_select == 'adminSearchId'){
-                                            $sql="select * from gold_msg where gold_msg_name LIKE '%$msg_search_input%' order by gold_msg_num desc";
+                                        if($mem_search_select == 'memberSearchId'){
+                                            $sql="select * from gold_mem where gold_mem_id LIKE '%$mem_search_input%' order by gold_mem_num desc";
                                         }else{
-                                            $sql="select * from gold_msg where gold_msg_tit LIKE '%$msg_search_input%' order by gold_msg_num desc";
+                                            $sql="select * from gold_mem where gold_mem_name LIKE '%$mem_search_input%' order by gold_mem_num desc";
 
 
                                         }
-                                        $msg_search_result=mysqli_query($dbConn, $sql);
-                                        $msg_search_result_num=mysqli_num_rows($msg_search_result);
+                                        $mem_search_result=mysqli_query($dbConn, $sql);
+                                        $mem_search_result_num=mysqli_num_rows($mem_search_result);
 
-                                        if(!$msg_search_result_num){
+                                        if(!$mem_search_result_num){
                                             echo "<li style='padding:10px 0; width:100%; text-align:center;'>데이터가 존재하지 않습니다. 검색 조건 및 검색어를 확인해주세요</li>";
                                         } else{
-                                           while($msg_search_result_row=mysqli_fetch_array($msg_search_result)){
-                                               $msg_result_num=$msg_search_result_row['gold_msg_num'];
-                                               $msg_result_name=$msg_search_result_row['gold_msg_name'];
-                                               $msg_result_tit=$msg_search_result_row['gold_msg_tit'];
-                                               $msg_result_reg=$msg_search_result_row['gold_msg_reg'];
-                                               $msg_result_email=$msg_search_result_row['gold_msg_email'];                                         
+                                           while($mem_search_result_row=mysqli_fetch_array($mem_search_result)){
+                                               $mem_result_num=$mem_search_result_row['gold_mem_num'];
+                                               $mem_result_id=$mem_search_result_row['gold_mem_id'];                                              
+                                               $mem_result_name=$mem_search_result_row['gold_mem_name'];
+                                               $mem_result_level=$mem_search_result_row['gold_mem_level'];
+                                               $mem_result_point=$mem_search_result_row['gold_mem_point'];
+                                                                
 
                                         ?>
-
                                         <li class="adminContents clear">
-                                            <span class="msgNum"><?=$msg_result_num?></span>
-                                            <span class="msgName"><?=$msg_result_name?></span> 
-                                            <span class="msgTit"><a href="/gold/pages/admin/admin_view.php?num=<?=$msg_result_num?>"><?=$msg_result_tit?></a></span>                                              
-                                            <span class="msgReg"><?=$msg_result_reg?></span>
-                                            <span class="msgEmail"><?=$msg_result_email?></span>
-                                            <span class="msgDelete"><a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_result_num?>">삭제</a></span>
+                                                <span class="memNum"><?=$mem_result_num?></span>
+                                                <span class="memId"><?=$mem_result_id?></span>
+                                                <span class="memName"><?=$mem_result_name?></span>
+                                                <span class="memLevel"><input type="text" value="<?=$mem_result_level?>" name="level"></span>
+                                                <span class="memPoint"><input type="text" value="<?=$mem_result_point?>" name="point"></span>
+                                                <span class="memUpdate"><button type="submit">수정</button></span>
+                                                <span class="memDelete"><button type="button" onclick="location.href='/gold/php_process/pages/mem_delete.php?num=<?=$mem_result_num?>'"><i class="fa fa-remove"></i></button></span>
+                                                                     
 
-                                        </li>                                          
+                                        
+                                        </li>
 
                                                                                   
 

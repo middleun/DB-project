@@ -8,7 +8,7 @@ if(!$check_id){
 
 }else{
     include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
-    $sql="select * from gold_mem where GOLD_mem_id='$check_id'";
+    $sql="select * from gold_mem where gold_mem_id='$check_id'";
     $result=mysqli_query($dbConn, $sql);
     $num_record=mysqli_num_rows($result);
     if($num_record){

@@ -102,7 +102,7 @@
                             <div class="adminViewBtns">
                                 <a href="mailto:<?=$msg_mail?>">메일보내기</a>
                                 <a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>">삭제</a>
-                                <a href="javascript:history.go(-1)">돌아가기</a>
+                                <a href="/gold/pages/admin/admin.php">뒤로가기</a>
 
                             </div>
                           

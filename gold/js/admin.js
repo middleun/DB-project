@@ -13,7 +13,7 @@ $(function(){
             $(".adminPanel").hide();
             $(".adminPanel").eq(tabIndex).show();
         });
-        $(".adminTabs button").eq(0).trigger("click");
+        $(".adminTabs button").eq(1).trigger("click");
     };
     adminTab();
 });

@@ -22,8 +22,8 @@ date_default_timezone_set('Asia/Seoul');
   include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
 
 
-  $sql="insert into gold_mem(GOLD_mem_id,GOLD_mem_name,GOLD_mem_email,
-  GOLD_mem_pass,GOLD_mem_regi_day,GOLD_mem_level,GOLD_mem_point) values('$member_id','$name','$email','$member_pass','$regist_day','$level','$point')";
+  $sql="insert into gold_mem(gold_mem_id,gold_mem_name,gold_mem_email,
+  gold_mem_pass,gold_mem_reg,gold_mem_level,gold_mem_point) values('$member_id','$name','$email','$member_pass','$regist_day','$level','$point')";
 
   mysqli_query($dbConn, $sql);
 

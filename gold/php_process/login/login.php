@@ -11,7 +11,7 @@
  include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
 
  //GOLD_mem_id 컬럼 데이터와 $login_id 입력 데이터 비교하여 같은 값 조회  
- $sql="select * from gold_mem where GOLD_mem_id='$login_id'";
+ $sql="select * from gold_mem where gold_mem_id='$login_id'";
 
  $result=mysqli_query($dbConn, $sql);
  // mysquli_num_rows : 일치하는 갯수를 조회  
@@ -31,7 +31,7 @@
     ";
  } else{
     $row=mysqli_fetch_array($result);
-    $db_pass=$row['GOLD_mem_pass'];
+    $db_pass=$row['gold_mem_pass'];
 
     if($login_pass != $db_pass){
 
@@ -43,9 +43,9 @@
     ";
     } else{
       session_start();
-      $_SESSION["userid"]=$row['GOLD_mem_id'];
-      $_SESSION["userpoint"]=$row['GOLD_mem_point'];
-      $_SESSION["userlevel"]=$row['GOLD_mem_level'];
+      $_SESSION["userid"]=$row['gold_mem_id'];
+      $_SESSION["userpoint"]=$row['gold_mem_point'];
+      $_SESSION["userlevel"]=$row['gold_mem_level'];
 
 
       echo"

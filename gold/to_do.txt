@@ -19,6 +19,9 @@
 
 17. 메세지 입력 기능
 
+
+포인트 증가 기능 추가
+
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/db_connect.php';
 
 

@@ -100,11 +100,11 @@
  /* admin view page style */
  .admin .adminTabs button{padding:10px 20px;}
 
- .admin .msgTable li span.msgNum{width:10%;}
- .admin .msgTable li span.msgName{width:15%;}
- .admin .msgTable li span.msgTit{width:40%;}
- .admin .msgTable li span.msgReg{width:25%;}
- .admin .msgTable li span.msgEmail{display:none;}
+ .admin .adminTable li span.msgNum{width:10%;}
+ .admin .adminTable li span.msgName{width:15%;}
+ .admin .adminTable li span.msgTit{width:40%;}
+ .admin .adminTable li span.msgReg{width:25%;}
+ .admin .adminTable li span.msgEmail{display:none;}
 
 
 
@@ -281,14 +281,16 @@
     /* admin view page style */
     .admin .adminTabs button{padding:5px 10px; font-size:12px;}
 
-    .admin .msgTable{margin:10px auto 0;}
+    .admin .adminTable{margin:10px auto ;}
 
-    .admin .msgTable li span{font-size:12px; padding:7px 0;}
-    .admin .msgTable li span.msgNum{width:15%;}
-    .admin .msgTable li span.msgName{width:20%;}
-    .admin .msgTable li span.msgTit{width:50%;}
-    .admin .msgTable li span.msgReg{display:none;}
-    .admin .msgTable li span.msgDelete{width:15%;}
+    .adminViewBtns a{font-size:12px;}
+
+    .admin .adminTable li span{font-size:12px; padding:7px 0;}
+    .admin .adminTable li span.msgNum{width:15%;}
+    .admin .adminTable li span.msgName{width:20%;}
+    .admin .adminTable li span.msgTit{width:50%;}
+    .admin .adminTable li span.msgReg{display:none;}
+    .admin .adminTable li span.msgDelete{width:15%;}
 
     /* .adminPanel .adminSearch{width:100%;justify-content: space-between; }   */
         
@@ -489,12 +491,14 @@
 
     /* admin page style */
 
-    .admin .msgTable{width:90%; }
+    .admin .adminTable{width:90%; }
 
-    .admin .msgTable li span.msgNum{display:none;}
-    .admin .msgTable li span.msgName{width:20%;}
-    .admin .msgTable li span.msgTit{width:60%;}
-    .admin .msgTable li span.msgDelete{width:20%;}
+    .admin .adminTable li span.msgNum{display:none;}
+    .admin .adminTable li span.msgName{width:20%;}
+    .admin .adminTable li span.msgTit{width:60%;}
+    .admin .adminTable li span.msgDelete{width:20%;}
+
+    .adminViewBtns{width:90%;}
 
 
 

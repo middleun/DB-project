@@ -5,7 +5,7 @@ padding:50px 0; font-weight: 600; font-family:'Noto Sans KR'; color:#838383;}
 .deny a{background:#d0af51; color:#fff; padding:10px 25px; display:inline-block;}
 
 
-/* admin page mai tabs style */
+/* admin page main tabs style */
 .admin .adminTabs{width:80%; height:auto; margin:auto; text-align:center; }
 .admin .adminTabs button{border:1px solid #d0af51; font-weight:600; background:#fff;
 padding:10px 30px; transition:all 0.4s; color:#d0af51; cursor: pointer;}
@@ -14,32 +14,33 @@ padding:10px 30px; transition:all 0.4s; color:#d0af51; cursor: pointer;}
 .admin .adminTabs button.active{background:#d0af51; color:#fff;}
 
 
-/* admin page Message Table style */
+/************* admin page Message Table style 
+**********************************************/
 
-.admin .msgTable{width:80%; height:auto; margin:50px auto 0;}
+.admin .adminTable{width:80%; height:auto; margin:50px auto 0;}
 
-.admin .msgTable li{width:100%; height:auto; }
+.admin .adminTable li{width:100%; height:auto; }
 
-.admin .msgTable li:nth-child(odd){background: #f0f0f0;}
-.admin .msgTable li.msgTitle{background:#d0af51;}
+.admin .adminTable li:nth-child(odd){background: #f0f0f0;}
+.admin .adminTable li.adminTitle{background:#d0af51;}
 
-.admin .msgTable li span{text-align: center; display:block; float: left; padding:10px 0; font-family: 'Noto Sans KR'; font-weight: 300; } 
-.admin .msgTable li span.msgNum{width:5%;}
-.admin .msgTable li span.msgName{width:10%;}
-.admin .msgTable li span.msgTit{width:35%;}
-.admin .msgTable li span.msgReg{width:20%;}
-.admin .msgTable li span.msgEmail{width:20%;}
-.admin .msgTable li span.msgDelete{width:10%;}
-
-
-
-.admin .msgTable li.msgTitle span{color:#fff;}
-.admin .msgTable li.msgContents span,
-.admin .msgTable li.msgContents span a{color: #838383;}
-.admin .msgTable li.msgContents span.msgDelete a{background:#d0af51; color:#fff; padding:3px 10px; font-size:12px;}
+.admin .adminTable li span{text-align: center; display:block; float: left; padding:10px 0; font-family: 'Noto Sans KR'; font-weight: 300; } 
+.admin .adminTable li span.msgNum{width:5%;}
+.admin .adminTable li span.msgName{width:10%;}
+.admin .adminTable li span.msgTit{width:35%;}
+.admin .adminTable li span.msgReg{width:20%;}
+.admin .adminTable li span.msgEmail{width:20%;}
+.admin .adminTable li span.msgDelete{width:10%;}
 
 
-.admin .msgTable li.msgContents:last-child{border-bottom: 1px solid #d0af51;}
+
+.admin .adminTable li.adminTitle span{color:#fff;}
+.admin .adminTable li.adminContents span,
+.admin .adminTable li.adminContents span a{color: #838383;}
+.admin .adminTable li.adminContents span.msgDelete a{background:#d0af51; color:#fff; padding:3px 10px; font-size:12px;}
+
+
+.admin .adminTable li.adminContents:last-child{border-bottom: 1px solid #d0af51;}
 
 /* admin view page style */
 .adminViewBtns{width:80%; height: auto; margin:auto; text-align:right;}
@@ -49,3 +50,28 @@ padding:10px 30px; transition:all 0.4s; color:#d0af51; cursor: pointer;}
 
 .adminPanel .adminSearch{display:flex; justify-content: flex-end; flex-wrap:wrap;}
 .adminPanel div.search{float:right;}
+
+.msgTab .adminViewBtns{margin-top:10px;}
+
+
+/************* admin page Member Table style 
+**********************************************/
+.admin .memberTab li span.memNum{width:10%;}
+.admin .memberTab li span.memId{width:20%;}
+.admin .memberTab li span.memName{width:20%;}
+.admin .memberTab li span.memLevel{width:15%;}
+.admin .memberTab li span.memPoint{width:15%;}
+.admin .memberTab li span.memUpdate{width:10%;}
+.admin .memberTab li span.memDelete{width:10%;}
+
+.admin .memberTab span.memLevel input,
+.admin .memberTab span.memPoint input{width:80%; border:1px solid #d0af51; border-radius: 0; outline: 0; 
+color:#838383; text-align: center; padding: 3px 0;}
+
+
+.admin .adminTable li.adminContents span.memUpdate button,
+.admin .adminTable li.adminContents span.memDelete button{outline:0; background:#d0af51; color:#fff; padding:3px 10px; font-size:12px;
+border:1px solid #d0af51; cursor: pointer;}
+
+.memberTab .adminViewBtns{margin-top:10px;}
+
