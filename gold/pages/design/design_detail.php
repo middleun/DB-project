@@ -101,6 +101,30 @@
                     
                     <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i>Get In Touch With...</a>
                 </div>
+                
+                <?php
+                if(!$userlevel==1){
+                
+                ?>
+                <input type="hidden">
+
+                <?php
+                } else{
+                ?>
+
+                  <div class="productAdminBtns">
+                  <button type="button" >수정</button>
+                  <button type="button" onclick="location.href='/gold/php_process/pages/design_detail_delete.php?num=<?=$design_detail_num?>'">삭제</button>
+
+                </div>
+
+                <?php
+                }
+                ?>
+
+
+
+               
             </div>
             <!-- end of designContents -->
           </div>

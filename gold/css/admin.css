@@ -4,6 +4,7 @@ padding:50px 0; font-weight: 600; font-family:'Noto Sans KR'; color:#838383;}
 .deny p{font-size:25px; font-weight:600; margin-bottom: 10px;}
 .deny a{background:#d0af51; color:#fff; padding:10px 25px; display:inline-block;}
 
+.admin .title{margin-bottom: 0;}
 
 /* admin page main tabs style */
 .admin .adminTabs{width:80%; height:auto; margin:auto; text-align:center; }
@@ -76,4 +77,17 @@ border:1px solid #d0af51; cursor: pointer;}
 .memberTab .adminViewBtns{margin-top:10px;}
 
 
+/************* admin page qna Table style 
+**********************************************/
+.admin .qnaTab li span.qnaCheck{width:5%;}
+.admin .qnaTab li span.qnaNum{width:15%;}
+.admin .qnaTab li span.qnaId{width:15%;}
+.admin .qnaTab li span.qnaTit{width:40%;}
+.admin .qnaTab li span.qnaReg{width:15%;}
+.admin .qnaTab li span.qnaHit{width:10%;}
 
+.admin .qnaTab .checkDeleteBtn{border:0; outline:0; background: #d0af51; color: #fff; padding: 0 30px; height:30px; margin-top:10px;}
+
+
+.admin .qnaTab .qnaResultBtns{width:80%; height: auto; margin:auto; text-align:right; margin-top:10px;}
+.admin .qnaTab .qnaResultBtns button{padding:5px 15px; border:1px solid #d0af51;background:#d0af51; color:#fff; display:inline-block; margin-left:0;}

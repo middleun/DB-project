@@ -1,3 +1,10 @@
+/* common product admin button style(수정,삭제버튼)  */
+.productAdminBtns{width:100%; height: auto;}
+.productAdminBtns button{border:1px solid #d0af51; background: #d0af51; color:#fff;
+padding:5px 30px; margin-top: 10px;}
+
+
+
 /* design page box style */
 .deWeBoxes{width:100%; height:auto; overflow:hidden; }
 .deWeBoxes .deWeBox{width:25%; height: auto; float:left; padding:5px;}
