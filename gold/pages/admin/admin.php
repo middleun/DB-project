@@ -303,7 +303,7 @@
                                                     document.qnaSearch.qnaSearchInput.focus();
                                                     return;
                                                 }
-                                                document.mqnaSearch.submit();
+                                                document.qnaSearch.submit();
                                             }                                        
                                         </script>
                                     </form>
