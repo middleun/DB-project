@@ -1,4 +1,8 @@
+<!-- 앱 페이지 컨텐츠 수정 후 넘어가는 위치! cf.app_insert.php -->
+
 <?php
+
+    $app_update_num=$_GET['num'];
 
     $app_title=nl2br($_REQUEST['app_title']);
     $app_title=addslashes($app_title);
@@ -62,44 +66,3 @@
 
   // database connect
   include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
-
-  $sql="insert into gold_app(gold_app_tit, gold_app_ser,
-  gold_app_des, gold_app_img, gold_app_thumb ,gold_app_cli, gold_app_reg) values('$app_title','$app_serial','$app_desc','$main_name','$sub_name',  '$app_client','$regist_day')";
-
-  mysqli_query($dbConn, $sql);
-
-
-  $sql="select * from gold_app order by gold_app_num desc";
-
-  $app_result= mysqli_query($dbConn, $sql);
-  
-  // 비어있는 배열을 하나 만들어서 
-  $arr_result=array();
-
-  // array push로 비어있는 배열에 값을 넣어줌 
-  while($app_row=mysqli_fetch_array($app_result)){
-      array_push($arr_result, array(
-          'appnum' => $app_row['gold_app_num'],
-          'apptit' => $app_row['gold_app_tit'],
-          'appser' => $app_row['gold_app_ser'],
-          'appdes' => $app_row['gold_app_des'],
-          'appmain' => $app_row['gold_app_img'],
-          'appthumb' => $app_row['gold_app_thumb'],
-          'appcli' => $app_row['gold_app_cli'],
-          'appreg' => $app_row['gold_app_reg']
-      ));
-  }
-
-  
-  //   make json file
-  file_put_contents($_SERVER['DOCUMENT_ROOT'].'/gold/data/json/app.json',json_encode($arr_result, JSON_PRETTY_PRINT));
-
-
-
-  echo "
-    <script>
-      location.href='/gold/pages/app/app.php';
-    </script>
-  "
-
-?>
