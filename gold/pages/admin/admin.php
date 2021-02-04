@@ -115,7 +115,7 @@
                                                  if(!document.adminSearch.adminSearchInput.value){
                                                     alert('검색어를 입력해주세요');
                                                     document.adminSearch.adminSearchInput.focus();
-                                                    return;
+                                                    return false;
                                                 }
                                                 document.adminSearch.submit();
                                             }                                        
@@ -197,7 +197,7 @@
                                                  if(!document.memberSearch.memberSearchInput.value){
                                                     alert('검색어를 입력해주세요');
                                                     document.memberSearch.memberSearchInput.focus();
-                                                    return;
+                                                    return false;;
                                                 }
                                                 document.memeberSearch.submit();
                                             }                                        
@@ -344,10 +344,6 @@
         <script src="/gold/js/web_design_page.js"></script>
         <script src="/gold/js/admin.js"></script>
 
-        <!-- <script>
-            let abc=confirm('삭제하시겠습니까?');
-           
-        </script> -->
 
 
         

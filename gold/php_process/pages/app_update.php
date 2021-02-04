@@ -2,7 +2,7 @@
 
 <?php
 
-    $app_update_num=$_GET['num'];
+    $app_update_num=$_REQUEST['num'];
 
     $app_title=nl2br($_REQUEST['app_title']);
     $app_title=addslashes($app_title);
@@ -66,3 +66,49 @@
 
   // database connect
   include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+
+  $sql="UPDATE gold_app SET gold_app_tit='$app_title', gold_app_ser='$app_serial', gold_app_des='$app_desc',    gold_app_img='$main_name', gold_app_thumb='$sub_name', gold_app_cli='$app_client',gold_app_reg='$regist_day'    
+  WHERE gold_app_num = '$app_update_num'";
+
+  mysqli_query($dbConn, $sql);
+  // 여기까지는 디자인, 웹페이지랑 같은 순서
+  // but, app페이지의 경우 json파일 연결했기 때문에 다음을 넣어줘야. 데이터 갱신 가능
+
+  $sql="select * from gold_app order by gold_app_num desc";
+  
+
+
+  $app_result= mysqli_query($dbConn, $sql);
+    
+    // 비어있는 배열을 하나 만들어서 
+    $arr_result=array();
+
+    // array push로 비어있는 배열에 값을 넣어줌 
+    while($app_row=mysqli_fetch_array($app_result)){
+        array_push($arr_result, array(
+            'appnum' => $app_row['gold_app_num'],
+            'apptit' => $app_row['gold_app_tit'],
+            'appser' => $app_row['gold_app_ser'],
+            'appdes' => $app_row['gold_app_des'],
+            'appmain' => $app_row['gold_app_img'],
+            'appthumb' => $app_row['gold_app_thumb'],
+            'appcli' => $app_row['gold_app_cli'],
+            'appreg' => $app_row['gold_app_reg']
+        ));
+    }
+
+    
+    //   make json file
+    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/gold/data/json/app.json',json_encode($arr_result, JSON_PRETTY_PRINT));
+
+
+    echo"
+    <script>
+        alert('수정이 완료되었습니다');
+        location.href='/gold/pages/app/app.php';
+    </script>
+    ";   
+    
+ 
+
+?>

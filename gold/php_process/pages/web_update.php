@@ -2,7 +2,7 @@
 
 <?php
 
-  $web_update_num=$_GET['num'];
+  $web_update_num=$_REQUEST['num'];
 
   $web_title=nl2br($_REQUEST['web_title']);
   $web_title=addslashes($web_title);

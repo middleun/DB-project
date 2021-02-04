@@ -27,7 +27,7 @@
  
  <!-- web input contents form -->
  <div class="webInputForm webDesignInput">
-                <form action="/gold/php_process/pages/web_update.php" method="post" name="web_form" enctype="multipart/form-data">
+                <form action="/gold/php_process/pages/web_update.php?num=<?=$web_num?>" method="post" name="web_form" enctype="multipart/form-data">
                   <div class="titleSer clear">
                       <p class="title_input">
                          <label for="title">Title</label>
@@ -48,7 +48,7 @@
                   </div>
                   <!-- end of title, serial, client input -->
                   <div class="web_desc uploadDesc">
-                      <textarea name="web_desc" placeholder="<?=$web_result_tit?>"></textarea>
+                      <textarea name="web_desc" placeholder="<?=$web_result_des?>"></textarea>
                   </div>
                   <!-- end of text description -->
 
