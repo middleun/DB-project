@@ -89,18 +89,25 @@
                                     
                                 </form>
                                 <?php
-                                    if($userid==""){                                        
-                                ?>
-                                <button type="submit" onclick="plzLogin()">등록</button>
+                                // 유저 레벨이 1이 아니면 무조건 돌아가기                                                                 
+                               
+                                    if($userlevel !=1){
+                                ?> 
+                                    <a href="/gold/pages/qna/qna.php" class="ansBack">돌아가기</a>
+                                       
                                 <?php
-                                    }else{
+                                // 유저 레벨이 1이면 수정+돌아가기                                                                 
+
+
+                                    } else{
                                 ?>        
-                                <a href="/gold/pages/qna/qna.php">돌아가기</a>
+                                    <a href="/gold/pages/qna/qna.php" class="ansBack">돌아가기</a>                                
                                 <button type="submit" class="ansUbdate" onclick="ansUpdate()"> 수정</button>                               
                                 
                                                                
                                 <?php
-                                }
+                                    }
+                                
                                 ?>                             
                             
                             </div>                                            
@@ -124,7 +131,7 @@
 
                             <div class="ansResult">
                                 <p class="adminId">
-                                    <b>관리자 답변</b>
+                                    <b>관리자 답글</b>
                                     <?php
                                     if($userlevel == 1){
                                                                             
@@ -149,12 +156,12 @@
                                     <p class="ansBtnBox">
                                    
                                     <?php
-                                        // 로그인 안했을 때
-                                        if($userid==""){                                        
+                                        // 레벨이 1이 아닐 때
+                                        if($userlevel !=1){                                        
                                     ?>
                                     <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
                                     <?php
-                                        // 로그인 했을 때
+                                        // 레벨이 1일 때
                                             }else{
                                     ?>        
                                     
@@ -192,7 +199,7 @@
             // ansSubmit.addEventListener('click', insertAns);
             
             function plzLogin(){
-                alert('글쓰기를 하시려면 로그인이 필요합니다');
+                alert('답글 작성 권한이 없습니다');
             }
             
             // 수정하기 함수

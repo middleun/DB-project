@@ -1,4 +1,6 @@
 <!-- 앱 페이지 컨텐츠 수정 후 넘어가는 위치! cf.app_insert.php -->
+<meta charset="UTF-8" />
+
 
 <?php
 

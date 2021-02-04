@@ -76,8 +76,8 @@
  .designBoxes .designBox{width:33.33%;}
 
  /* design input form style */
- .webDesingInput .titleSer p label{display:none;}
- .webDesingInput .titleSer p input{width:100%;}
+ .webDesignInput .titleSer p label{display:none;}
+ .webDesignInput .titleSer p input{width:100%;}
 
  /* design detail page style */
  .designRight{padding-left:0;}

@@ -1,3 +1,6 @@
+<meta charset="UTF-8" />
+
+
 <?php
     $update_num=$_GET['num'];
     $update_title=$_POST['ansTitle'];

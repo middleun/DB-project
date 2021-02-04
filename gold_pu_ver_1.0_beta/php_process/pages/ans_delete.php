@@ -1,3 +1,5 @@
+<meta charset="UTF-8" />
+
 <?php
     $rep_ans_num=$_GET['num'];
 

@@ -1,3 +1,6 @@
+<meta charset="UTF-8" />
+
+
 <?php
    $mem_num=$_GET['num'];
    $mem_level=$_POST['level'];

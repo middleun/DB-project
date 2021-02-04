@@ -1,4 +1,7 @@
 <!-- 웹 상세페이지 삭제 기능 -->
+<meta charset="UTF-8" />
+
+
 <?php
     $web_delete_num=$_GET['num'];
 

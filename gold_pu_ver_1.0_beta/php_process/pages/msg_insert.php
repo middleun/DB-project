@@ -1,3 +1,6 @@
+<meta charset="UTF-8" />
+
+
 <?php
 
 $msg_name=$_POST['msgName'];

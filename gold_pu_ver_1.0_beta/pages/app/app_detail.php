@@ -80,10 +80,10 @@
                     <img src="/gold/data/app_page/app_main/<?=$app_detail_img?>" alt="">
                   </li>
                   <li>
-                    <img src="/gold/data/app_page/app_main/app_main_005.png" alt="">
+                    <img src="/gold/data/app_page/app_main/app_main_002.png" alt="">
                   </li>
                   <li>
-                    <img src="/gold/data/app_page/app_main/app_main_006.png" alt="">
+                    <img src="/gold/data/app_page/app_main/app_main_003.png" alt="">
                   </li>
                 </ul>
                 <span class="frameTop"></span>
@@ -114,7 +114,7 @@
                 <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i>Get In Touch With...</a>
               </div>
               <?php
-                if(!$userlevel==1){
+                if($userlevel !=1){
                 
                 ?>
                 <input type="hidden">

@@ -113,7 +113,7 @@
                 </div>
 
                 <?php
-                if(!$userlevel==1){
+                if($userlevel !=1){
                 
                 ?>
                   <input type="hidden">

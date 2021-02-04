@@ -1,3 +1,6 @@
+<meta charset="UTF-8" />
+
+
 <?php
 
     $app_title=nl2br($_REQUEST['app_title']);

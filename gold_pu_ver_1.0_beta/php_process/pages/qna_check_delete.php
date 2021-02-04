@@ -1,5 +1,7 @@
 <!-- Not Qna Page/ qna Tab Panel in Admin Page -->
 <!-- 체크박스 배열 관련 -->
+<meta charset="UTF-8" />
+
 
 <?php
 

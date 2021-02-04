@@ -1,3 +1,5 @@
+<meta charset="UTF-8" />
+
 <?php
     $ans_qna_num=$_GET['num'];
     $ans_con=$_POST['ansInputTxt'];

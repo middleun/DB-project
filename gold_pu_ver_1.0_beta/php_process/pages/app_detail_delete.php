@@ -1,4 +1,6 @@
 <!-- 앱 상세페이지 삭제 기능 -->
+<meta charset="UTF-8" />
+
 <?php
     $app_delete_num=$_REQUEST['num'];
 

@@ -1,4 +1,7 @@
 <!-- 디자인 상세페이지 삭제 기능 -->
+<meta charset="UTF-8" />
+
+
 <?php
     $delete_num=$_GET['num'];
 

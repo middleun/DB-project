@@ -1,3 +1,6 @@
+<meta charset="UTF-8" />
+
+
 <?php
  
   $design_title=nl2br($_REQUEST['design_title']);
