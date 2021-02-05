@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold</title>
 
+    <!-- favicon link -->
+    <link rel="icon" href="/gold/img/favicon.ico"/>
+
     <!-- font awesome link -->
     <link
       rel="stylesheet"

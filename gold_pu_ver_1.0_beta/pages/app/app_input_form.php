@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold</title>
 
+    <!-- favicon link -->
+    <link rel="icon" href="/gold/img/favicon.ico"/>
+
     <!-- font awesome link -->
     <link
       rel="stylesheet"
@@ -42,7 +45,7 @@
             <!-- end of contact title -->
 
             <!-- app input contents form -->
-            <div class="designInputForm webDesignInput">
+            <div class="designInputForm appInputForm webDesignInput ">
                 <form action="/gold/php_process/pages/app_insert.php" method="post" name="app_form" enctype="multipart/form-data">
                   <div class="titleSer clear">
                       <p class="title_input">
