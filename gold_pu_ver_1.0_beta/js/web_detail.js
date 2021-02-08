@@ -7,17 +7,41 @@ $(function () {
 
     }
 
+    // cf. 자바스크립트 파라미터정리 
+    const fitPcFrame={
+        we_fe: ".webPcFrame", 
+        we_img:".webMainImg",
+        we_box:".webBox",
+        img_h:0.60,
+        box_h_1:0.65, 
+        box_h_2:0.92
+
+    }
+
+    const fitMobileFrame={
+        we_fe: ".webMobileFrame", 
+        we_img:".webMainImg_m",
+        we_box:".webBox_m",
+        img_h:0.92,
+        box_h_1:0.8, 
+        box_h_2:1.1
+    }
+
+
+   
+
     // fit height display frame function
-    function fitDisplay(we_fe, we_img, we_box, img_h, box_h_1, box_h_2) {
-        let frameWidth = $(we_fe).outerWidth();
+    // 프레임 값과 그 안에 들어가는 컨텐츠 값을 계산한 것
+    function fitDisplay(fitFrame) {
+        let frameWidth = $(fitFrame.we_fe).outerWidth();
         let contentWidth = $(".detailCon").outerWidth();
         let winWidth = $(window).width();
-        $(we_img).outerHeight(frameWidth * img_h);
+        $(fitFrame.we_img).outerHeight(frameWidth * fitFrame.img_h);
 
         if (winWidth > 800) {
-            $(we_box).outerHeight(contentWidth * box_h_1);
+            $(fitFrame.we_box).outerHeight(contentWidth * fitFrame.box_h_1);
         } else {
-            $(we_box).outerHeight(contentWidth * box_h_2);
+            $(fitFrame.we_box).outerHeight(contentWidth * fitFrame.box_h_2);
         }
 
 
@@ -25,13 +49,13 @@ $(function () {
 
 
     $(window).resize(function () {
-        fitDisplay(".webPcFrame", ".webMainImg", ".webBox", 0.60, 0.65, 0.92);
-        fitDisplay(".webMobileFrame", ".webMainImg_m", ".webBox_m", 0.92, 0.8, 1.1);
+        fitDisplay(fitPcFrame);
+        fitDisplay(fitMobileFrame);
 
     });
 
-    fitDisplay(".webPcFrame", ".webMainImg", ".webBox", 0.60, 0.65, 0.92);
-    fitDisplay(".webMobileFrame", ".webMainImg_m", ".webBox_m", 0.92, 0.8, 1.1);
+    fitDisplay(fitPcFrame);
+    fitDisplay(fitMobileFrame);
 
     // portfolio display scroll up 
     function pfScrollUp(wf, img_h, fr_h, duration) {
