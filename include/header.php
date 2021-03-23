@@ -36,7 +36,7 @@
     <!-- <img src="img/banner.jpg" alt="" /> -->
     <span class="overlay"></span>
     <div class="slogan">
-      <h2>LUXURY <b>GOLD</b></h2>
+      <h2>MORE <b>GREENERY</b></h2>
       <hr />
       <p>passion for fashion</p>
     </div>

@@ -1,6 +1,9 @@
+:root{--main-color: #afc548;}
+
+
 /* web input & design input common style */
 
-.webDesignInput{width:100%; height: auto; border:1px solid #d0af51; padding:10px;}
+.webDesignInput{width:100%; height: auto; border:1px solid var(--main-color); padding:10px;}
 /* form 여백 없애기??? */
 /* .webDesignInput>form{margin:0 auto;box-sizing: border-box; width: 100%; padding: 0; border-width: 0;} */
 
@@ -14,11 +17,11 @@ display:flex; justify-content: space-between; flex-grow: 1;}
 
 
 .webDesignInput .titleSer p.client_input{float:right;}
-.webDesignInput .titleSer p label{background: #d0af51; color: #fff; padding: 10px 20px; display: block; width: 20%;text-align: center; float:left;}
+.webDesignInput .titleSer p label{background: var(--main-color); color: #fff; padding: 10px 20px; display: block; width: 20%;text-align: center; float:left;}
 .webDesignInput .titleSer .serial_input>label{padding:10px 10px;}
-.webDesignInput .titleSer p input{width:80%; border: 1px solid #d0af51; padding: 10px; float:left;}
+.webDesignInput .titleSer p input{width:80%; border: 1px solid var(--main-color); padding: 10px; float:left;}
 
-.webDesignInput .uploadDesc textarea{width:100%; height:200px; border:1px solid #d0af51;
+.webDesignInput .uploadDesc textarea{width:100%; height:200px; border:1px solid var(--main-color);
 margin-top: 10px; resize: none; padding: 10px;}
 
 .webDesignInput .uploadImgs{width:100%; height: auto; 
@@ -37,13 +40,13 @@ width:1px; height: 1px; padding:0; margin:-1; overflow:hidden; }
 
 
 .webDesignInput .inputControll label{display:block; width:100%; height:auto; 
-text-align:center; border: 1px solid #d0af51; color:#fff; background:#d0af51;padding:10px 0; transition: all 0.4s;}
-.webDesignInput .inputControll label:hover{background: #fff; color:#d0af51;}
+text-align:center; border: 1px solid var(--main-color); color:#fff; background:var(--main-color);padding:10px 0; transition: all 0.4s;}
+.webDesignInput .inputControll label:hover{background: #fff; color:var(--main-color);}
 
 .webDesignInput .uploadName{display: block; padding: 10px; width:100%; 
-border:1px solid #d0af51; color: #d0af51; margin-bottom: 10px;}
+border:1px solid var(--main-color); color: var(--main-color); margin-bottom: 10px;}
 .webDesignInput .imgWrap{width:100%; height: auto; padding: 5px;
-border:1px solid #d0af51; overflow: hidden;margin-top: 10px;}
+border:1px solid var(--main-color); overflow: hidden;margin-top: 10px;}
 .webDesignInput .imgWrap img{width:100%;}
 
 
@@ -52,7 +55,7 @@ border:1px solid #d0af51; overflow: hidden;margin-top: 10px;}
 transition:all 0.3s; }
 .upload .btns .commonBtn{margin-right: 5px; transition:all 0.3s;
 background:#fff;}
-.upload .btns .commonBtn:hover{background:#d0af51; color: #fff;}
+.upload .btns .commonBtn:hover{background:var(--main-color); color: #fff;}
 
 
 /* web input page style */
