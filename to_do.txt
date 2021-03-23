@@ -33,7 +33,7 @@
 
 24. 아이디 찾기/ 비밀번호 찾기?
 
-
+#afc548
 
 
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/db_connect.php';
