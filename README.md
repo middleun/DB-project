@@ -28,9 +28,9 @@ tag: [database, admin, upload, delete, update, qna]
 
 # 3. 사이트 전체  구조
 
-![my_schedule_1.png](img/readme/my_schedule_1.png)
+![my_schedule_1.png](img/readme/db_flowchart.png)
 
-                    - 사이트의 UI 구조입니다. 각 페이지 간 이동을 점선으로 표시했고, LV.1으로 로그인할 경우 접근 가능한 페이지는 별도로 표시했습니다.
+- 사이트의 UI 구조입니다. 각 페이지 간 이동을 점선으로 표시했고, LV.1으로 로그인할 경우 접근 가능한 페이지는 별도로 표시했습니다.
 
 ---
 
