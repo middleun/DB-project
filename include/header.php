@@ -34,17 +34,17 @@
 <div class="topMain clear">
   <div class="bannerBox">
     <!-- <img src="img/banner.jpg" alt="" /> -->
-    <span class="overlay"></span>
+    <!-- <span class="overlay"></span> -->
     <div class="slogan">
-      <h2>MORE <b>GREENERY</b></h2>
-      <hr />
-      <p>passion for fashion</p>
+      <h2>Handwritten<b><br>Heart</b></h2>
+      <!-- <hr /> -->
+      <!-- <p>passion for fashion</p> -->
     </div>
   </div>
 
   <div class="headerBox">
     <!-- <img src="img/header-img.jpg" alt="" /> -->
-    <span class="overlay"></span>
+    <!-- <span class="overlay"></span> -->
   </div>
   <div class="loginWrap">
     <div class="logBox">

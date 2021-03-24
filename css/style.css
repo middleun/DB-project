@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
-:root{--main-color: #afc548;}
+:root{--main-color: #31394b;}
+:root{--sub-color:#c5a28c;}
 
 /* reset CSS style */
 *{margin:0; padding:0; box-sizing: border-box;}
@@ -38,7 +39,7 @@ button.commonBtn:hover{background: var(--main-color); color: #fff;}
 .title .line{width:10%; display:block; height:2px; background:var(--main-color); float:left;
 transition:all 0.4s; }
 .title a{display:block; width:40%; float:left;text-align:right;text-transform: uppercase;
-font-size:12px; font-weight:400; color:#afc548; transition: all 0.4s;}
+font-size:12px; font-weight:400; color:var(--sub-color); transition: all 0.4s;}
 
 .title:hover .line{width:60%;}
 .title:hover a{text-decoration: underline;}
@@ -66,13 +67,13 @@ width: 100%; height: 100%; z-index:1;}
 
 /* top main section style */
 .topMain{width:90%; margin:auto; height:auto; background:#ddd;}
-.topMain .bannerBox{width:40%; float:left; overflow:hidden; position:relative; height:50vh; background:url(../img/banner-img.png)
-no-repeat center center;background-size:cover; }
+.topMain .bannerBox{width:40%; float:left; overflow:hidden; position:relative; height:50vh; _background:url(../img/header-img-2.png)
+no-repeat center center;_background-size:cover; background:var(--main-color); }
 .topMain .bannerBox img{width:100%;}
 
 
 .topMain .headerBox{width:60%; float:right; overflow: hidden;
-position:relative; height:50vh; background:url(../img/header-img-2.png)
+position:relative; height:50vh; background:url(../img/header_img_1.png)
 no-repeat center center;background-size:cover;}
 .topMain .headerBox img{width:100%;}
 
@@ -85,7 +86,7 @@ no-repeat center center;background-size:cover;}
 color:#fff; right:40px; top:50%; transform:translateY(-50%);
 width:100%; text-align:right;}
 .topMain .bannerBox .slogan h2{font-size: 3.5vw; color:#fff;}
-.topMain .bannerBox .slogan h2 b{color:#afc548; font-weight:400;}
+.topMain .bannerBox .slogan h2 b{color:var(--sub-color); font-weight:400;}
 .topMain .bannerBox .slogan p{text-transform:uppercase; color: #bbb;
 display:inline-block; font-size:12px;letter-spacing: 2px; font-weight: 600;}
 .topMain .bannerBox .slogan hr{width:18%; display:inline-block;
@@ -94,7 +95,7 @@ margin-bottom: 3px;  border:0; border-bottom:1px solid #eee;}
 
 
 /* banner box sns style */
-.topMain .loginWrap{width:40%; height:60px; background: #afc548;
+.topMain .loginWrap{width:40%; height:60px; background: var(--sub-color);
 float:left; float:left; display: flex; justify-content: space-between;}
 .topMain .logBox{width:100%; height: 60px; display: flex;
     justify-content: flex-end; align-items: center;}
@@ -114,13 +115,13 @@ justify-content: center; border-radius: 50%;}
 
 
 /* header box gnb style */
-.topMain .gnb{width:60%; height:60px; background: #000;
+.topMain .gnb{width:60%; height:60px; background: var(--main-color);
 float:right; }
 .topMain .gnb ul li{float:left; height: 60px; padding:0 30px;
 display: flex; align-items: center; transition: all 0.4s;}
 .topMain .gnb ul li:hover,
 .topMain .gnb ul li.active{background:#fff;}
-.topMain .gnb ul a{color: #afc548; font-size: 16px; font-weight: 400;}
+.topMain .gnb ul a{color: var(--sub-color); font-size: 16px; font-weight: 400;}
 
 /* mobile menu style */
 .mobileMenu{width:30px; height: 30px; border:1px solid var(--main-color);

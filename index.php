@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greenery</title>
+    <title>Handwritten Heart</title>
 
     <!-- favicon link -->
     <link rel="icon" href="/gold/img/favicon.ico"/>
@@ -32,10 +32,10 @@
         <div class="center clear">
           <!-- title with common style -->
           <div class="title">
-            <h2>New Arrivals</h2>
+            <h2>Wall Paper</h2>
             <div class="linkBox">
               <span class="line"></span>
-              <a href="#"> View all products</a>
+              <!-- <a href="#"> View all products</a> -->
             </div>
           </div>
           <!-- end of common title -->
@@ -47,27 +47,27 @@
 
           <div class="arrivalBox">
             <div class="arrivalCon">
-              <img src="img/new-arrival-1.jpg" alt="" />
-              <span class="overlay"></span>
+              <img src="img/main_wallpaper_4.jpg" alt="" />
+              <!-- <span class="overlay"></span> -->
               <div class="arrivalTxt">
-                <h2>Summer</h2>
-                <em>collection</em>
+                <!-- <h2>Summer</h2>
+                <em>collection</em> -->
               </div>
             </div>
             <div class="arrivalCon">
-              <img src="img/new-arrival-2.jpg" alt="" />
-              <span class="overlay"></span>
+              <img src="img/main_wallpaper_1.jpg" alt="" />
+              <!-- <span class="overlay"></span> -->
               <div class="best">
-                <a href="#">best</a>
-                <p>Quality</p>
+                <!-- <a href="#">best</a>
+                <p>Quality</p> -->
               </div>
             </div>
             <div class="arrivalCon">
-              <img src="img/new-arrival-3.jpg" alt="" />
-              <span class="overlay"></span>
+              <img src="img/main_wallpaper_3.jpg" alt="" />
+              <!-- <span class="overlay"></span> -->
               <div class="arrivalTxt">
-                <h2>Autumn</h2>
-                <em>collection</em>
+                <!-- <h2>Autumn</h2>
+                <em>collection</em> -->
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
         <div class="center clear">
           <!-- title with common style -->
           <div class="title">
-            <h2>Desgin Project</h2>
+            <h2>ART WORK</h2>
             <div class="linkBox">
               <span class="line"></span>
               <a href="#"> View all products</a>
@@ -151,7 +151,7 @@
         <div class="center clear">
           <!-- title with common style -->
           <div class="title">
-            <h2>web & app preview</h2>
+            <h2>Brush & Pen Lettering</h2>
             <div class="linkBox">
               <span class="line"></span>
               <a href="#"> View all products</a>
@@ -161,7 +161,7 @@
 
           <div class="fashionBox men">
             <div class="fashionTxt">
-              <h2><em>Web</em> project</h2>
+              <h2><em>Brush</em> Lettering</h2>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium.
@@ -205,7 +205,7 @@
 
           <div class="fashionBox women">
             <div class="fashionTxt">
-              <h2><em>app</em> project</h2>
+              <h2><em>Pen</em> Lettering</h2>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium.
