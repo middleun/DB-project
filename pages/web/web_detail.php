@@ -38,10 +38,10 @@
     <link rel="icon" href="/gold/img/favicon.ico"/>
 
     <!-- font awesome link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <!-- reset css style link -->
+    <link rel="stylesheet" href="/gold/css/reset.css" />
 
     <!-- main css link -->
     <link rel="stylesheet" href="/gold/css/style.css" />

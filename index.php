@@ -9,12 +9,12 @@
     <link rel="icon" href="/gold/img/favicon.ico"/>
 
     <!-- font awesome link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
-    <!-- main css link -->
+    <!-- reset css style link -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- main css style link -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- animation css link -->
@@ -81,7 +81,7 @@
             <h2>ART WORK</h2>
             <div class="linkBox">
               <span class="line"></span>
-              <a href="#"> View all products</a>
+              <!-- <a href="#"> View all products</a> -->
             </div>
           </div>
           <!-- end of common title -->
@@ -154,7 +154,7 @@
             <h2>Brush & Pen Lettering</h2>
             <div class="linkBox">
               <span class="line"></span>
-              <a href="#"> View all products</a>
+              <!-- <a href="#"> View all products</a> -->
             </div>
           </div>
           <!-- end of common title -->
@@ -259,7 +259,7 @@
         <div class="center">
           <!-- about title -->
           <div class="title">
-            <h2>Contact Us</h2>
+            <h2>Contact Me</h2>
             <div class="subTit">
               <span class="subLine"></span>
        

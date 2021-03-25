@@ -2,10 +2,10 @@
     <div class="center clear">
       <!-- about title -->
       <div class="title">
-        <h2>About us</h2>
+        <h2>About me</h2>
         <div class="subTit">
           <span class="subLine"></span>
-          <a href="#" class="subLink">View More Details</a>
+          <!-- <a href="#" class="subLink">View More Details</a> -->
         </div>
       </div>
       <!-- end of about title -->
@@ -24,19 +24,19 @@
         </p>
         <ul class="sns">
           <li>
-            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
           </li>
         </ul>
       </div>

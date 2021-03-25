@@ -36,9 +36,9 @@
     <!-- <img src="img/banner.jpg" alt="" /> -->
     <!-- <span class="overlay"></span> -->
     <div class="slogan">
-      <h2>Handwritten<b><br>Heart</b></h2>
+      <h2>Handwritten<b><br>--Heart<i class="fas fa-pen-fancy"></i></b></h2>
       <!-- <hr /> -->
-      <!-- <p>passion for fashion</p> -->
+      <p>마음을 모아 글씨에 담다 </p>
     </div>
   </div>
 
@@ -82,9 +82,9 @@
   <div class="gnb">
     <ul class="clear">
       <li class="active"><a href="/gold/index.php?key=0">HOME</a></li>
-      <li><a href="/gold/pages/design/design.php">DESIGN</a></li>
-      <li><a href="/gold/pages/web/web.php">WEB</a></li>
-      <li><a href="/gold/pages/app/app.php">APP</a></li>
+      <li><a href="/gold/pages/design/design.php">Artwork</a></li>
+      <li><a href="/gold/pages/web/web.php">Brush</a></li>
+      <li><a href="/gold/pages/app/app.php">Pen</a></li>
       <li><a href="#">ABOUT</a></li>
       <li><a href="/gold/pages/qna/qna.php">Q&A</a></li>
     </ul>
