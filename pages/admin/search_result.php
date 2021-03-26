@@ -7,7 +7,7 @@
         <title>Gold</title>
 
         <!-- favicon link -->
-        <link rel="icon" href="/gold/img/favicon.ico"/>
+        <link rel="icon" href="/gold/img/favicon_96x96.png"/>
 
         <!-- font awesome link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
