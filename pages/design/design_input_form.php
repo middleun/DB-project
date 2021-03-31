@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gold</title>
+    <title>Handwritten Heart</title>
 
     <!-- favicon link -->
     <link rel="icon" href="/gold/img/favicon_96x96.png"/>
@@ -47,7 +47,7 @@
 
             <!-- design input contents form -->
             <div class="designInputForm webDesignInput">
-                <form action="/gold/php_process/pages/design_insert.php" method="post" name="design_form" enctype="multipart/form-data">
+                <form action="/gold/php_process/pages/design_insert.php" method="post" name="design_form" enctype="multipart/form-data" class="clear">
                   <div class="titleSer clear">
                       <p class="title_input">
                          <label for="title">Title</label>

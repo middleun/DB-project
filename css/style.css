@@ -16,12 +16,10 @@
 no-repeat center center;_background-size:cover; background:var(--main-color); }
 .topMain .bannerBox img{width:100%;}
 
-
 .topMain .headerBox{width:60%; float:right; overflow: hidden;
 position:relative; height:50vh; background:url(../img/header_img_1.png)
 no-repeat center center;background-size:cover;}
 .topMain .headerBox img{width:100%;}
-
 
 .topMain .bannerBox>.overlay{background:rgba(0,0,0,0.6);}
 .topMain .headerBox>.overlay{background:rgba(208,175,81,0.4);}
