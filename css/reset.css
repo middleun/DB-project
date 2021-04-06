@@ -9,7 +9,7 @@ a{text-decoration: none; color: #111;}
 img{display: block;}
 button, input, textarea, select{outline: 0; font-family: 'Lato'; 
 -webkit-appearance: none; background:#fff; border-radius:0;}
-input[type="checkbox"]{-webkit-appearance: auto;_border-radius:0; _border:1px solid var(--main-color);}
+input[type="checkbox"]{-webkit-appearance: auto;}
 input::placeholder,textarea::placeholder{color:var(--main-color);}
 input:focus,textarea:focus{background:#f8f8f8;}
 
@@ -32,8 +32,7 @@ button.commonBtn:hover{background: var(--main-color); color: #fff;}
 .title{width:auto; height: auto; float:left;}
 .title h2{font-family:'Pangolin';font-size:50px; font-weight:300; text-transform: uppercase;}
 .title .linkBox{width:100%; display:flex; align-items: center;}
-.title .line{width:100%; display:block; height:2px; background:var(--main-color); float:left;
-_transition:all 0.4s; }
+.title .line{width:100%; display:block; height:2px; background:var(--main-color); float:left;}
 .title a{display:block; width:40%; float:left;text-align:right;text-transform: uppercase;
 font-size:12px; font-weight:400; color:var(--sub-color); transition: all 0.4s;}
 

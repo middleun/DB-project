@@ -34,7 +34,7 @@
 @media screen and (max-width:950px){
 /* .arrivals .arrivalBox .arrivalCon{height: 350px;} */
 
- .topMain .gnb ul li{_width:16%; padding:0 16px; _justify-content: center;}
+ .topMain .gnb ul li{padding:0 16px; }
 
  /* main page design project section style */
  .arrivals .arrivalBox .arrivalCon{width:32%;}
@@ -328,7 +328,7 @@
     .designBoxes .designBox{width:50%;}
 
     .btns{flex-wrap: wrap; justify-content: space-between;}
-    .btns>a.commonBtn{margin-right: 0; _margin-top: 5px;}
+    .btns>a.commonBtn{margin-right: 0;}
     .btns button.commonBtn{width:49.5%;}
     .btns>a:nth-child(1){width:49.5%;}
     .btns>a:nth-child(2){width:49.5%;}
@@ -338,7 +338,7 @@
 
     /* design inputform style */
 
-    .webDesignInput .titleSer{flex-wrap:wrap; _flex-grow:1;}
+    .webDesignInput .titleSer{flex-wrap:wrap; }
     .webDesignInput .titleSer p{width:49.5%; }
     .webDesignInput .titleSer p.title_input{width:100%; margin-bottom: 10px; }
     .webDesignInput .titleSer p.domain_input{width:100%; margin-bottom: 10px; }
