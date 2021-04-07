@@ -3,15 +3,19 @@ $(function () {
     // header top fix when scrolling down
     const offTop = $(".gnb").offset().top;
 
-    let fixHeader = function () {
+    let fixHeader = function() {
 
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             let scroll = $(window).scrollTop();
             let winWidth = $(window).width();
             if (winWidth <= 480 && offTop <= scroll) {
-                $(".gnb").css({ "position": "fixed" });
+                $(".gnb").css({
+                    "position": "fixed"
+                });
             } else {
-                $(".gnb").css({ "position": "relative" });
+                $(".gnb").css({
+                    "position": "relative"
+                });
             }
 
         });

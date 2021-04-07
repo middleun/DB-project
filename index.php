@@ -15,7 +15,7 @@
         <meta property="og:url" content="https://middleun.dothome.co.kr/gold">
         <meta property="og:title" content="Handwritten Heart">
         <meta property="og:description" content="관리자 기능, 게시판 기능 등 전반적인 데이터베이스의 입력 및 출력을 활용한 사이트로, 개인 캘리그라피 작업물을 올리는 용도로 리디자인중입니다.">
-        <meta property="og:image" content="http://middleun.dothome.co.kr/portfolio/img/db_og_img.png">
+        <meta property="og:image" content="http://middleun.dothome.co.kr/gold/img/db_og_img.png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
 
@@ -328,6 +328,8 @@
 
         <!-- jquery frame work -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- prefixfree cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <!-- jquery easing cdn link -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- main jqeury link -->
