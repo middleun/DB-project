@@ -18,9 +18,6 @@
  $num_match=mysqli_num_rows($result);
  
  //  mysqli_fetch_array : 데이터 추출. 배열로 뽑아옴
- //  $row=mysqli_fetch_array($result);
- //  $db_pass=$row['GOLD_mem_pass'];
- //  $db_name=$row['GOLD_mem_name'];
 
  if(!$num_match){
      echo"

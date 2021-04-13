@@ -2,9 +2,6 @@
 
 date_default_timezone_set('Asia/Seoul');
 
-
-
-
   $member_id=$_POST['id'];
   $name=$_POST['name'];
   $member_pass=$_POST['pass'];

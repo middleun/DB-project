@@ -14,14 +14,9 @@
       $app_detail_ser=$app_detail_row['gold_app_ser'];
       $app_detail_des=$app_detail_row['gold_app_des'];
       $app_detail_img=$app_detail_row['gold_app_img'];
-    //   $web_detail_mimg=$web_detail_row['gold_web_mimg'];
-    // //   $web_detail_thumb=$row['gold_de_thumb'];
       $app_detail_cli=$app_detail_row['gold_app_cli'];
       $app_detail_reg=$app_detail_row['gold_app_reg'];
 
-    // //   echo $design_detail_tit, $design_detail_ser, $design_detail_des, 
-    // //   $design_detail_img1, $design_detail_img2, $design_detail_thumb, 
-    // //   $design_detail_cli, $design_detail_reg;
 
 
 ?>
@@ -33,6 +28,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Handwritten Heart</title>
+    <!-- seo -->
     <meta name="keywords" content="데이터베이스, 관리자 기능, 게시판 기능, 캘리그라피">
     <meta name="title" content="데이터베이스 활용 캘리그라피 작업물 업로드 사이트">
     <meta name="subject" content="DB">
@@ -40,11 +36,13 @@
     <meta name="author" content="eunallaco@gmail.com, 이중은">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+
+    <!-- open graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://middleun.dothome.co.kr/gold">
     <meta property="og:title" content="Handwritten Heart">
     <meta property="og:description" content="관리자 기능, 게시판 기능 등 전반적인 데이터베이스의 입력 및 출력을 활용한 사이트로, 개인 캘리그라피 작업물을 올리는 용도로 리디자인중입니다.">
-    <meta property="og:image" content="http://middleun.dothome.co.kr/portfolio/img/db_og_img.png">
+    <meta property="og:image" content="http://middleun.dothome.co.kr/gold/img/db_og_img.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 

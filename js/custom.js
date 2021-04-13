@@ -63,37 +63,4 @@ $(function () {
 
     $(".productImg").eq(0).trigger("click");
 
-
-
-
-
-
-
-    // if (matchMedia("screen and (max-width: 480px)").matches) {
-    // $(window).resize(function(){
-    //     let winWidth=$(window).width();
-
-    //     if(winWidth<=480){
-    //         let offTop=$(".gnb").offset().top;
-    //         console.log(offTop);
-
-    //         $(window).scroll(function(){
-    //             let scroll=$(window).scrollTop();
-    //             if(offTop<=scroll){
-    //                 $(".gnb").css({"position":"fixed"});
-    //             }else{
-    //                 $(".gnb").css({"position":"static"});
-    //             }
-
-    //         });
-
-    //     }
-
-
-
-    // });    
-
-    // }    
-
-
 });

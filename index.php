@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Handwritten Heart</title>
+        <title>데이터베이스활용사이트 : Handwritten Heart</title>
 
         <!-- seo -->
         <meta name="keywords" content="데이터베이스, 관리자 기능, 게시판 기능, 캘리그라피">
@@ -53,7 +53,6 @@
                     <h2>Wall Paper</h2>
                     <div class="linkBox">
                     <span class="line"></span>
-                    <!-- <a href="#"> View all products</a> -->
                     </div>
                 </div>
                 <!-- end of common title -->
@@ -348,9 +347,7 @@
             
             if(loca == 'contact'){
             // const contactOff=$(`.${loca}`).offset().top;
-
             const contactOff=$('.' + loca).offset().top;
-
             $("html,body").animate({scrollTop:contactOff},1000, 'easeInQuint');
         
             }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Handwritten Heart</title>
+    <!-- seo -->
     <meta name="keywords" content="데이터베이스, 관리자 기능, 게시판 기능, 캘리그라피">
     <meta name="title" content="데이터베이스 활용 캘리그라피 작업물 업로드 사이트">
     <meta name="subject" content="DB">
@@ -11,11 +12,13 @@
     <meta name="author" content="eunallaco@gmail.com, 이중은">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+
+    <!-- open graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://middleun.dothome.co.kr/gold">
     <meta property="og:title" content="Handwritten Heart">
     <meta property="og:description" content="관리자 기능, 게시판 기능 등 전반적인 데이터베이스의 입력 및 출력을 활용한 사이트로, 개인 캘리그라피 작업물을 올리는 용도로 리디자인중입니다.">
-    <meta property="og:image" content="http://middleun.dothome.co.kr/portfolio/img/db_og_img.png">
+    <meta property="og:image" content="http://middleun.dothome.co.kr/gold/img/db_og_img.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -45,43 +48,44 @@
   <body>
     <div class="wrap">
      
-    <?php include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/header.php" ?> 
+        <?php include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/header.php" ?> 
 
-    <section class="contents login hasTitle">
-      <div class="center">
-        <!-- login title -->
-        <div class="title">
-            <h2>LOGIN</h2>
-            <div class="subTit">
-              <span class="subLine"></span>
-              
-            </div>
-        </div>
-        <!-- end of login title -->
-        
-        <!-- login box -->
-        <form action="/gold/php_process/login/login.php" method="post" 
-        name="loginForm">
-          <div class="loginBox">
-            <p><input type="text" placeholder="Enter Your ID" name="loginId"></p>
-            <p><input type="password" placeholder="Enter Your Password" name="loginPass"></p>
-            <div class="loginBtns">
-              <a href="#" class="loginBtn" >LOGIN</a>
-              <a href="/gold/pages/login/join_form.php" class="joinBtn">JOIN US</a>          
-            </div>
-          </div>
-          <!-- end of login Box -->
-        </form>
-        
-        <div class="findInfo">
-          <a href="#">아이디 찾기</a>
-          <a href="#">비밀번호 찾기</a>
+        <section class="contents login hasTitle">
+            <div class="center">
+                <!-- login title -->
+                <div class="title">
+                    <h2>LOGIN</h2>
+                    <div class="subTit">
+                        <span class="subLine"></span>                    
+                    </div>
+                </div>
+                <!-- end of login title -->
+                
+                <!-- login box -->
+                <form action="/gold/php_process/login/login.php" method="post" 
+                name="loginForm">
+                    <div class="loginBox">
+                        <p><input type="text" placeholder="Enter Your ID" name="loginId"></p>
+                        <p><input type="password" placeholder="Enter Your Password" name="loginPass"></p>
+                        <div class="loginBtns">
+                            <a href="#" class="loginBtn" >LOGIN</a>
+                            <a href="/gold/pages/login/join_form.php" class="joinBtn">JOIN US</a>          
+                        </div>
+                    </div>
+                    <!-- end of login Box -->
+                </form>
+                
+                <div class="findInfo">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
 
-        </div>
-      </div>
-      <!-- end of center -->
-       
-    </section>
+                </div>
+            </div>
+            <!-- end of center -->
+        
+        </section>
+    </div>
+    <!-- end of wrap -->
       
     <?php include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/about.php" ?>         
     <?php include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/footer.php" ?> 
@@ -96,42 +100,39 @@
     <script>
       const loginBtn=document.querySelector('.loginBtn');
 
-      loginBtn.addEventListener('click', loginCheck);
-         
-      
+      loginBtn.addEventListener('click', loginCheck);     
 
-      function loginCheck(){
+        function loginCheck(){
         
-        if(!document.loginForm.loginId.value){
-          alert('아이디를 입력해주세요');
-          document.loginForm.loginId.focus();
-          return;
-        }
+            if(!document.loginForm.loginId.value){
+            alert('아이디를 입력해주세요');
+            document.loginForm.loginId.focus();
+            return;
+            }
+            
+            if(!document.loginForm.loginPass.value){
+                alert('비밀번호를 입력해주세요');
+                document.loginForm.loginPass.focus();
+                return;
+            }
+
+            document.loginForm.submit();
         
-        if(!document.loginForm.loginPass.value){
-        alert('비밀번호를 입력해주세요');
-        document.loginForm.loginPass.focus();
-        return;
         }
 
-        document.loginForm.submit();
-    
-      }
-      loginCheck();
 
+        (function(){
+            // 모든 키 중 하나를 눌렀을 때 이벤트 실행
+            document.addEventListener('keydown', function(e){
+                // 누를 키를 저장- event에서 넘어온 keycode를 저장
+                const keyCode=e.keyCode;
+                if(keyCode ==13){
+                    loginCheck();
+                }
 
-      (function(){
-        // 모든 키 중 하나를 눌렀을 때 이벤트 실행
-        document.addEventListener('keydown', function(e){
-          // 누를 키를 저장- event에서 넘어온 keycode를 저장
-          const keyCode=e.keyCode;
-          if(keyCode ==13){
-            loginCheck();
-          }
+            });
+        })();    
 
-        });
-
-      })();        
       
     </script>
     

@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Handwritten Heart</title>
+        <!-- seo -->
         <meta name="keywords" content="데이터베이스, 관리자 기능, 게시판 기능, 캘리그라피">
         <meta name="title" content="데이터베이스 활용 캘리그라피 작업물 업로드 사이트">
         <meta name="subject" content="DB">
@@ -11,11 +12,13 @@
         <meta name="author" content="eunallaco@gmail.com, 이중은">
         <meta name="robots" content="index,follow">
         <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+
+        <!-- open graph -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://middleun.dothome.co.kr/gold">
         <meta property="og:title" content="Handwritten Heart">
         <meta property="og:description" content="관리자 기능, 게시판 기능 등 전반적인 데이터베이스의 입력 및 출력을 활용한 사이트로, 개인 캘리그라피 작업물을 올리는 용도로 리디자인중입니다.">
-        <meta property="og:image" content="http://middleun.dothome.co.kr/portfolio/img/db_og_img.png">
+        <meta property="og:image" content="http://middleun.dothome.co.kr/gold/img/db_og_img.png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
 
@@ -52,19 +55,19 @@
             <?php include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/header.php" ?> 
 
             <section class="contents qna hasTitle">
-                    <div class="center">
-                        <!-- contact title -->
-                        <div class="title">
-                            <h2>View Inquiry</h2>
-                            <div class="subTit">
-                                <span class="subLine"></span>
-                               
-                            </div>
+                <div class="center">
+                    <!-- contact title -->
+                    <div class="title">
+                        <h2>View Inquiry</h2>
+                        <div class="subTit">
+                            <span class="subLine"></span>
+                            
                         </div>
-                        <!-- end of contact title -->
+                    </div>
+                    <!-- end of contact title -->
 
-                        <div class="qnaBoxes qnaView deWeBoxes">       
-                            <?php
+                    <div class="qnaBoxes qnaView deWeBoxes">       
+                        <?php
 
                             $ans_num=$_GET['num'];
 
@@ -88,116 +91,115 @@
                             mysqli_query($dbConn, $sql);
                             
 
-                            ?>
+                        ?>
 
-                            <div class="writerInfo">
-                                <p>posted by <?=$ans_id?> No.<?=$ans_num?> / <?=$ans_reg?> /<?=$ans_hit?>Hits</p>
-                            </div>                                      
-                                                      
-                            <div class="writeBox clear">
-                                    
-                                <form action="/gold/php_process/pages/qna_update.php?num=<?=$ans_num?>" method="post" class="writeForm" name="ansForm">
-                                    <p class="qnaTitInput">
-                                        <label for="ansTitle">제목</label>
-                                        <input type="text" name="ansTitle" id="ansTitle" placeholder="제목을 입력해주세요" value="<?=$ans_tit?>">
-                                    </p>
-                                    <p class="qnaTxtInput">
-                                        <textarea name="ansTxt" placeholder="내용을 입력해주세요"><?=$ans_con?></textarea>
-                                    </p>
-                                    
-                                </form>
-                                <?php
-                                // 유저 레벨이 1이 아니면 무조건 돌아가기                                                                 
-                               
-                                    if($userlevel !=1){
-                                ?> 
-                                    <a href="/gold/pages/qna/qna.php" class="ansBack">돌아가기</a>
-                                       
-                                <?php
-                                // 유저 레벨이 1이면 수정+돌아가기                                                                 
-
-
-                                    } else{
-                                ?>        
-                                    <a href="/gold/pages/qna/qna.php" class="ansBack">돌아가기</a>                                
-                                <button type="submit" class="ansUbdate" onclick="ansUpdate()"> 수정</button>                               
+                        <div class="writerInfo">
+                            <p>posted by <?=$ans_id?> No.<?=$ans_num?> / <?=$ans_reg?> /<?=$ans_hit?>Hits</p>
+                        </div>                                      
+                                                    
+                        <div class="writeBox clear">
                                 
-                                                               
-                                <?php
-                                    }
-                                
-                                ?>                             
-                            
-                            </div>                                            
-                            <!-- end of writeBox -->
-                            <?php
-                            $ans_num=$_GET['num'];
-
-                            include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
-                            
-                            $sql="select * from gold_ans where gold_ans_qna_num=$ans_num order by
-                            gold_ans_num desc";
-
-                            $rep_result=mysqli_query($dbConn, $sql);
-                            
-                            
-                            while($rep_row=mysqli_fetch_array($rep_result)){
-                            $rep_con=$rep_row['gold_ans_con'];
-                            $rep_ans_num=$rep_row['gold_ans_num'];
-                           
-                            ?>
-
-                            <div class="ansResult">
-                                <p class="adminId">
-                                    <b>관리자 답글</b>
-                                    <?php
-                                    if($userlevel == 1){
-                                                                            
-                                    ?>
-
-                                    <a href="/gold/php_process/pages/ans_delete.php?num=<?=$rep_ans_num?>" class="ansDelete">삭제</a>
-
-                                    <?php
-                                    }
-                                    ?>
+                            <form action="/gold/php_process/pages/qna_update.php?num=<?=$ans_num?>" method="post" class="writeForm" name="ansForm">
+                                <p class="qnaTitInput">
+                                    <label for="ansTitle">제목</label>
+                                    <input type="text" name="ansTitle" id="ansTitle" placeholder="제목을 입력해주세요" value="<?=$ans_tit?>">
                                 </p>
-                                <p class="ansResultTxt"><?=$rep_con?></p>
-                               
-                            </div>
+                                <p class="qnaTxtInput">
+                                    <textarea name="ansTxt" placeholder="내용을 입력해주세요"><?=$ans_con?></textarea>
+                                </p>
+                                
+                            </form>
                             <?php
-                            }
-                            ?>
-
-                            <div class="answerBox">
-                                <form action="/gold/php_process/pages/ans_insert.php?num=<?=$ans_num?>" method="post" name="ansInputForm"  class="ansInputForm">
-                                    <textarea name="ansInputTxt" placeholder="답글을 작성해주세요"></textarea>
-                                    <p class="ansBtnBox">
-                                   
-                                    <?php
-                                        // 레벨이 1이 아닐 때
-                                        if($userlevel !=1){                                        
-                                    ?>
-                                    <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
-                                    <?php
-                                        // 레벨이 1일 때
-                                            }else{
-                                    ?>        
+                            // 유저 레벨이 1이 아니면 무조건 돌아가기                                                                 
+                            
+                                if($userlevel !=1){
+                            ?> 
+                                <a href="/gold/pages/qna/qna.php" class="ansBack">돌아가기</a>
                                     
-                                    <button type="button" class="ansBtn" onclick="reply()"> 답글달기</button>                               
-                                        
-                                                                
-                                    <?php
-                                    }
-                                    ?>        
-                                      
-                                    </p>    
-                                </form>
-                            </div>
-                            <!-- end of answer Box -->
-                        </div>
-                        <!-- end of qnaBoxes -->
+                            <?php
+                            // 유저 레벨이 1이면 수정+돌아가기                                                                 
+
+                                } else{
+                            ?>        
+                                <a href="/gold/pages/qna/qna.php" class="ansBack">돌아가기</a>                                
+                            <button type="submit" class="ansUbdate" onclick="ansUpdate()"> 수정</button>                               
+                            
+                                                            
+                            <?php
+                                }
+                            
+                            ?>                             
                         
-                    </div>  
+                        </div>                                            
+                        <!-- end of writeBox -->
+                        <?php
+                        $ans_num=$_GET['num'];
+
+                        include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+                        
+                        $sql="select * from gold_ans where gold_ans_qna_num=$ans_num order by
+                        gold_ans_num desc";
+
+                        $rep_result=mysqli_query($dbConn, $sql);
+                        
+                        
+                        while($rep_row=mysqli_fetch_array($rep_result)){
+                        $rep_con=$rep_row['gold_ans_con'];
+                        $rep_ans_num=$rep_row['gold_ans_num'];
+                        
+                        ?>
+
+                        <div class="ansResult">
+                            <p class="adminId">
+                                <b>관리자 답글</b>
+                                <?php
+                                if($userlevel == 1){
+                                                                        
+                                ?>
+
+                                <a href="/gold/php_process/pages/ans_delete.php?num=<?=$rep_ans_num?>" class="ansDelete">삭제</a>
+
+                                <?php
+                                }
+                                ?>
+                            </p>
+                            <p class="ansResultTxt"><?=$rep_con?></p>
+                            
+                        </div>
+                        <?php
+                        }
+                        ?>
+
+                        <div class="answerBox">
+                            <form action="/gold/php_process/pages/ans_insert.php?num=<?=$ans_num?>" method="post" name="ansInputForm"  class="ansInputForm">
+                                <textarea name="ansInputTxt" placeholder="답글을 작성해주세요"></textarea>
+                                <p class="ansBtnBox">
+                                
+                                <?php
+                                    // 레벨이 1이 아닐 때
+                                    if($userlevel !=1){                                        
+                                ?>
+                                <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
+                                <?php
+                                    // 레벨이 1일 때
+                                        }else{
+                                ?>        
+                                
+                                <button type="button" class="ansBtn" onclick="reply()"> 답글달기</button>                               
+                                    
+                                                            
+                                <?php
+                                }
+                                ?>        
+                                    
+                                </p>    
+                            </form>
+                        </div>
+                        <!-- end of answer Box -->
+                    </div>
+                    <!-- end of qnaBoxes -->
+                    
+                </div>  
                 <!-- end of center -->
             </section>
             

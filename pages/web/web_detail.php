@@ -19,10 +19,6 @@
   $web_detail_cli=$web_detail_row['gold_web_cli'];
   $web_detail_reg=$web_detail_row['gold_web_reg'];
 
-//   echo $design_detail_tit, $design_detail_ser, $design_detail_des, 
-//   $design_detail_img1, $design_detail_img2, $design_detail_thumb, 
-//   $design_detail_cli, $design_detail_reg;
-
 
 ?>
 
