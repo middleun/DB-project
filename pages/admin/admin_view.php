@@ -60,18 +60,18 @@
             <?php include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/header.php" ?> 
 
             <section class="contents qna hasTitle">
-                    <div class="center">
-                        <!-- contact title -->
-                        <div class="title">
-                            <h2>Message Details</h2>
-                            <div class="subTit">
-                                <span class="subLine"></span>
-                               
-                            </div>
+                <div class="center">
+                    <!-- contact title -->
+                    <div class="title">
+                        <h2>Message Details</h2>
+                        <div class="subTit">
+                            <span class="subLine"></span>
+                            
                         </div>
-                        <!-- end of contact title -->
+                    </div>
+                    <!-- end of contact title -->
 
-                        <?php
+                    <?php
 
                         $msg_num=$_GET['num'];
 
@@ -87,7 +87,7 @@
                         $msg_reg=$msg_row['gold_msg_reg'];
                         $msg_email=$msg_row['gold_msg_email'];                       
 
-             
+                
 
                         // $sql="update gold_msg set gold_qna_hit=$new_hit where 
                         // gold_qna_num=$ans_num";
@@ -95,43 +95,43 @@
                         mysqli_query($dbConn, $sql);
 
 
-                        ?>
+                    ?>
 
 
-                        <!-- qna_view.php 페이지와 동일한 클래스로 작성 -->
-                        <div class="qnaBoxes qnaView adminView deWeBoxes">       
-                          
-
-                            <div class="writerInfo">
-                                <p>posted by <?=$msg_name?> No.<?=$msg_num?> / <?=$msg_reg?> /<?=$msg_email?></a></p>
-                            </div>                                      
-                                                      
-                            <div class="writeBox clear"> 
-                                <div class="writeForm">                                        
-                                    <p class="adminTitInput">
-                                        <label for="adminTitle">제목</label>
-                                        <input type="text" name="adminTitle" id="adminTitle" placeholder="제목을 입력해주세요" value="<?=$msg_tit?>">
-                                    </p>
-                                    <p class="adminInput">
-                                        <textarea name="adminTxt" placeholder="내용을 입력해주세요"><?=$msg_con?></textarea>
-                                    </p>  
-                                </div>
-                                                      
-                            
-                            </div>                                            
-                            <!-- end of writeBox -->
-                            <div class="adminViewBtns">
-                                <a href="mailto:<?=$msg_mail?>">메일보내기</a>
-                                <a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>">삭제</a>
-                                <a href="/gold/pages/admin/admin.php">뒤로가기</a>
-
-                            </div>
-                          
-                           
-                        </div>
-                        <!-- end of qnaBoxes -->
+                    <!-- qna_view.php 페이지와 동일한 클래스로 작성 -->
+                    <div class="qnaBoxes qnaView adminView deWeBoxes">       
                         
-                    </div>  
+
+                        <div class="writerInfo">
+                            <p>posted by <?=$msg_name?> No.<?=$msg_num?> / <?=$msg_reg?> /<?=$msg_email?></a></p>
+                        </div>                                      
+                                                    
+                        <div class="writeBox clear"> 
+                            <div class="writeForm">                                        
+                                <p class="adminTitInput">
+                                    <label for="adminTitle">제목</label>
+                                    <input type="text" name="adminTitle" id="adminTitle" placeholder="제목을 입력해주세요" value="<?=$msg_tit?>">
+                                </p>
+                                <p class="adminInput">
+                                    <textarea name="adminTxt" placeholder="내용을 입력해주세요"><?=$msg_con?></textarea>
+                                </p>  
+                            </div>
+                                                    
+                        
+                        </div>                                            
+                        <!-- end of writeBox -->
+                        <div class="adminViewBtns">
+                            <a href="mailto:<?=$msg_mail?>">메일보내기</a>
+                            <a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>">삭제</a>
+                            <a href="/gold/pages/admin/admin.php">뒤로가기</a>
+
+                        </div>
+                        
+                        
+                    </div>
+                    <!-- end of qnaBoxes -->
+                    
+                </div>  
                 <!-- end of center -->
             </section>
             
@@ -144,8 +144,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- main jqeury link -->
         <script src="/gold/js/custom.js"></script>
-        <script src="/gold/js/web_design_page.js"></script> 
-       
+        <script src="/gold/js/web_design_page.js"></script>      
       
         
         

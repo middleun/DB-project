@@ -60,25 +60,25 @@
             <?php include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/header.php" ?> 
 
             <section class="contents admin hasTitle">
-                    <div class="center">
-                        <!-- contact title -->
-                        <div class="title">
-                            <h2>Search Result</h2>
-                            <div class="subTit">
-                                <span class="subLine"></span>
-                                
-                            </div>
+                <div class="center">
+                    <!-- contact title -->
+                    <div class="title">
+                        <h2>Search Result</h2>
+                        <div class="subTit">
+                            <span class="subLine"></span>
+                            
                         </div>
-                        <!-- end of contact title -->
+                    </div>
+                    <!-- end of contact title -->
 
-                        <?php
-                        $include_path=$_GET['key']; 
-                        include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/$include_path.php" ?>               
-                                            
-                        
-                      
-                        
-                    </div>  
+                    <?php
+                    $include_path=$_GET['key']; 
+                    include $_SERVER["DOCUMENT_ROOT"]. "/gold/include/$include_path.php" ?>               
+                                        
+                    
+                    
+                    
+                </div>  
                 <!-- end of center -->
             </section>
             
