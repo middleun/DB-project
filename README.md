@@ -1,11 +1,3 @@
----
-layout: post
-title: "데이터베이스사이트"
-subtitle: "[database]"
-date: 2020-03-22
-background: 
-tag: [database, admin, upload, delete, update, qna]
----
 
 
 # DB Project(2020.12~2021.02)
