@@ -19,8 +19,7 @@ transition: all 0.4s;}
 .loginBox .loginBtns a:first-child:hover{color:var(--main-color); background: #fff;}
 
 
-.findInfo{width:60%; height:auto; margin:auto; padding:10px; display: flex;
-justify-content: flex-end;}
+.findInfo{width:60%; height:auto; margin:auto; padding:10px; display: flex; justify-content: flex-end;}
 .findInfo a{padding: 0 20px; border-left:1px solid var(--main-color); color:var(--main-color);}
 .findInfo a:hover{text-decoration: underline;}
 .findInfo a:first-child{border-left: 0;}

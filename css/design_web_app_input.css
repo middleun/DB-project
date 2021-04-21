@@ -20,17 +20,29 @@ margin-top: 10px; resize: none; padding: 10px;}
 .webDesignInput .uploadImgs .uploadBox:nth-child(2){margin:0 1px 0 3px;}
 .webDesignInput .uploadImgs .uploadBox:nth-child(3){float:right;}
 
-/* app page app upload img box */
-.webDesignInput .uploadImgs .uploadBox.appImg{width:49.5%;}
+/* web input page style */
+.webInputForm .titleSer p{width:calc(50% - 2px); margin-right:0;}
+.webInputForm .titleSer p:nth-child(1),
+.webInputForm .titleSer p:nth-child(3){float:left;margin-right:2px;}
+.webInputForm .titleSer p:nth-child(2),
+.webInputForm .titleSer p:nth-child(4){float:right;}
 
+.webInputForm .titleSer p:nth-child(1),
+.webInputForm .titleSer p:nth-child(2){margin-bottom: 10px;}
+
+
+/* app page app upload img box */
+.webDesignInput .uploadImgs .uploadBox.appImg{width:calc(50% - 2px); margin-right:0;}
+.webDesignInput .uploadImgs .uploadBox.appImg:nth-child(1){float:left; margin-right:1px;}
+.webDesignInput .uploadImgs .uploadBox.appImg:nth-child(2){float:right;}
 
 .webDesignInput .uploadBox .inputControll{text-align:center;}
-.webDesignInput .inputControll input[type="file"]{position:absolute; 
+.webDesignInput .uploadBox .inputControll input[type="file"]{position:absolute; 
 width:1px; height: 1px; padding:0; margin:-1; overflow:hidden; }
 
-.webDesignInput .inputControll label{display:block; width:100%; height:auto; 
+.webDesignInput .uploadBox .inputControll label{display:block; width:100%; height:auto; 
 text-align:center; border: 1px solid var(--main-color); color:#fff; background:var(--main-color);padding:10px 0; transition: all 0.4s;}
-.webDesignInput .inputControll label:hover{background: #fff; color:var(--main-color);}
+.webDesignInput .uploadBox .inputControll label:hover{background: #fff; color:var(--main-color);}
 
 .webDesignInput .uploadName{display: block; padding: 10px; width:100%; 
 border:1px solid var(--main-color); color: var(--main-color); margin-bottom: 10px;}
@@ -42,19 +54,8 @@ border:1px solid var(--main-color); overflow: hidden;margin-top: 10px;}
 /* buttons style */
 .upload .btns{width:100%; height: auto;margin:15px 0 0 0; display:flex; justify-content: center;
 transition:all 0.3s; }
-.upload .btns .commonBtn{margin-right: 5px; transition:all 0.3s;
-background:#fff;}
+.upload .btns .commonBtn{margin-right: 5px; transition:all 0.3s;background:#fff;}
 .upload .btns .commonBtn:hover{background:var(--main-color); color: #fff;}
 
 
-/* web input page style */
-.webInputForm .titleSer p{width:calc(50% - 2px); margin-right:0;}
-.webInputForm .titleSer p:nth-child(1),
-.webInputForm .titleSer p:nth-child(3){float:left;margin-right:2px;}
-.webInputForm .titleSer p:nth-child(2),
-.webInputForm .titleSer p:nth-child(4){float:right;}
-
-.webInputForm .titleSer p:nth-child(1),
-.webInputForm .titleSer p:nth-child(2)
-{margin-bottom: 10px;}
 

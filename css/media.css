@@ -32,7 +32,6 @@
 }
 
 @media screen and (max-width:950px){
-/* .arrivals .arrivalBox .arrivalCon{height: 350px;} */
 
  .topMain .gnb ul li{padding:0 16px; }
 
@@ -290,8 +289,6 @@
     .admin .adminTable li span.msgReg{display:none;}
     .admin .adminTable li span.msgDelete{width:15%;}
 
-    /* .adminPanel .adminSearch{width:100%;justify-content: space-between; }   */
-
     /* admin page member Tab style */
     .admin .memberTab li span.memNum{display:none;}
     .admin .memberTab li span.memId{width:20%;}
@@ -512,11 +509,9 @@
     .qnaView .writeBox a{float:none;}
 
     .qnaView .answerBox{width:90%; margin-top:20px;}
-
     .qnaView .ansResult{width:90%;}
     
 
-    /* admin page style */
     /* admin page style */
     .admin .adminTabs{width:90%;}
 

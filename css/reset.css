@@ -21,8 +21,7 @@ h3,p,em{font-family:'Noto Sans KR'}
 a.commonBtn,
 button.commonBtn{display:inline-block; padding: 10px 0; 
 border: 1px solid var(--main-color); color: var(--main-color); text-transform: uppercase;
-width:30%; text-align: center;margin-top: 10px; transition: all 0.4s; cursor: pointer;
-}
+width:30%; text-align: center;margin-top: 10px; transition: all 0.4s; cursor: pointer;}
 
 a.commonBtn:hover,
 button.commonBtn:hover{background: var(--main-color); color: #fff;}
@@ -36,7 +35,6 @@ button.commonBtn:hover{background: var(--main-color); color: #fff;}
 .title a{display:block; width:40%; float:left;text-align:right;text-transform: uppercase;
 font-size:12px; font-weight:400; color:var(--sub-color); transition: all 0.4s;}
 
-/* .title:hover .line{width:60%;} */
 .title:hover a{text-decoration: underline;}
 
 /* about,contact title style */
