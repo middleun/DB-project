@@ -1,5 +1,5 @@
 $(function () {
-    // cutr right side text
+    // cut right side text
     const cutTxtBox = $(".webLinks, .appLinks");
     for (let i = 0; i < cutTxtBox.length; i++) {
         let allTxt = cutTxtBox.eq(i).find("em").text();
@@ -25,10 +25,7 @@ $(function () {
         img_h:0.92,
         box_h_1:0.8, 
         box_h_2:1.1
-    }
-
-
-   
+    }   
 
     // fit height display frame function
     // 프레임 값과 그 안에 들어가는 컨텐츠 값을 계산한 것
@@ -43,8 +40,6 @@ $(function () {
         } else {
             $(fitFrame.we_box).outerHeight(contentWidth * fitFrame.box_h_2);
         }
-
-
     }
 
 

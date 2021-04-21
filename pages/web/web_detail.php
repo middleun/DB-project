@@ -15,7 +15,6 @@
   $web_detail_des=$web_detail_row['gold_web_des'];
   $web_detail_img=$web_detail_row['gold_web_img'];
   $web_detail_mimg=$web_detail_row['gold_web_mimg'];
-//   $web_detail_thumb=$row['gold_de_thumb'];
   $web_detail_cli=$web_detail_row['gold_web_cli'];
   $web_detail_reg=$web_detail_row['gold_web_reg'];
 

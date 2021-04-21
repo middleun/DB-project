@@ -11,7 +11,7 @@ $(function(){
     );
    
 });
-
+// qna page Paging
 let currentPage=1;
 let pageLength=$(".pgNum").length;
 function getPage(no){
@@ -24,21 +24,17 @@ function getPage(no){
         {page:no},
         function(qna_data){
             $(".qnaList").html(qna_data);
-
             currentPage = no;
-
         }
     );
 }
 
-function goNext(){
-   
+function goNext(){   
     if(currentPage == pageLength){
         getPage(pageLength);
 
     }else{
         getPage(currentPage +1);
-
     }
 }
 
@@ -48,20 +44,16 @@ function goPrev(){
 
     }else{
         getPage(currentPage -1);
-
     }
 }
 
 function firstPage(){
-    getPage(1);
-    
+    getPage(1);    
 }
 
 function lastPage(){
-    getPage(pageLength);
-    
+    getPage(pageLength);    
 }
-
 
 
 $(".pgNum").eq(0).trigger("click");

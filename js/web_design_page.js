@@ -25,8 +25,7 @@ $(function () {
 
     }
 
-    // load more when clicking load more button
-
+    // load more contents when clicking load more button(Design Page
     const designLoadMore = function () {
         $('.designBox').hide();
         $('.designBox').slice(0, 4).show();
@@ -45,7 +44,7 @@ $(function () {
     designLoadMore();
 
 
-    // load more when clicking load more button
+    // load more when clicking load more button(Web Page)
 
     const webLoadMore = function () {
         $('.webBox').hide();

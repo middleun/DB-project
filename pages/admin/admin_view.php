@@ -85,12 +85,7 @@
                         $msg_tit=$msg_row['gold_msg_tit'];                   
                         $msg_con=$msg_row['gold_msg_con'];
                         $msg_reg=$msg_row['gold_msg_reg'];
-                        $msg_email=$msg_row['gold_msg_email'];                       
-
-                
-
-                        // $sql="update gold_msg set gold_qna_hit=$new_hit where 
-                        // gold_qna_num=$ans_num";
+                        $msg_email=$msg_row['gold_msg_email'];   
 
                         mysqli_query($dbConn, $sql);
 
@@ -99,7 +94,7 @@
 
 
                     <!-- qna_view.php 페이지와 동일한 클래스로 작성 -->
-                    <div class="qnaBoxes qnaView adminView deWeBoxes">       
+                    <div class="qnaBoxes qnaView adminView deWeBoxes">      
                         
 
                         <div class="writerInfo">

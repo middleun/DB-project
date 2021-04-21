@@ -5,8 +5,6 @@ $(function () {
     let allData = [];
 
 
-
-
     $('.appBoxes').masonry({
         // options
         itemSelector: '.appBox',
@@ -43,9 +41,9 @@ $(function () {
             // console.log(item);
             let itemHTML = `<div class="appBox">
                                 <div>
-                                        <img src="/gold/data/app_page/app_thumb/${item.appthumb}" alt="">
-                                        <h2>${item.apptit}</h2>
-                                        <a href="/gold/pages/app/app_detail.php?num=${item.appnum}">View Detail</a>
+                                    <img src="/gold/data/app_page/app_thumb/${item.appthumb}" alt="">
+                                    <h2>${item.apptit}</h2>
+                                    <a href="/gold/pages/app/app_detail.php?num=${item.appnum}">View Detail</a>
                                 </div>
                                 </div>`;
             items.push($(itemHTML).get(0));
@@ -53,7 +51,7 @@ $(function () {
         });
 
         $(".appBoxes").append(items);
-        // appended:뒤에 것을 가져옴
+        // append:뒤에 것을 가져옴
 
         $(".appBoxes").imagesLoaded(function () {
             // $(items).removeClass("is-loading");

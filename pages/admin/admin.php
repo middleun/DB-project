@@ -166,7 +166,6 @@
                                 </li>
 
                                 <?php
-                                // include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
                                 $sql="select * from gold_mem order by gold_mem_num desc limit 10";                     
 
                                 $mem_result=mysqli_query($dbConn, $sql);
@@ -177,7 +176,6 @@
                                     $mem_name=$mem_row['gold_mem_name'];
                                     $mem_level=$mem_row['gold_mem_level'];
                                     $mem_point=$mem_row['gold_mem_point'];
-                                    // $mem_reg=$mem_row['gold_mem_reg'];
                                 
                                 ?>    
 

@@ -63,7 +63,7 @@
 
                     <!-- design input contents form -->
                     <div class="webInputForm webDesignInput">
-                        <form action="/gold/php_process/pages/web_insert.php" method="post" name="web_form" enctype="multipart/form-data">
+                        <form action="/gold/php_process/pages/web_insert.php" method="post" name="web_form" enctype="multipart/form-data" class="clear">
                             <div class="titleSer clear">
                                 <p class="title_input">
                                     <label for="title">Title</label>

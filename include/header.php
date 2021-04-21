@@ -32,66 +32,61 @@
 
 <!-- top main section -->
 <div class="topMain clear">
-  <div class="bannerBox">
-    <!-- <img src="img/banner.jpg" alt="" /> -->
-    <!-- <span class="overlay"></span> -->
-    <div class="slogan">
-      <h2>Handwritten<b><br>--Heart<i class="fas fa-pen-fancy"></i></b></h2>
-      <!-- <hr /> -->
-      <p>마음을 모아 글씨에 담다 </p>
+    <div class="bannerBox">
+        <div class="slogan">
+            <h2>Handwritten<b><br>--Heart<i class="fas fa-pen-fancy"></i></b></h2>
+            <!-- <hr /> -->
+            <p>마음을 모아 글씨에 담다 </p>
+        </div>
     </div>
-  </div>
 
-  <div class="headerBox">
-    <!-- <img src="img/header-img.jpg" alt="" /> -->
-    <!-- <span class="overlay"></span> -->
-  </div>
-  <div class="loginWrap">
-    <div class="logBox">
-      <?php
-        if(!$userid){        
-      
-      ?>
+    <div class="headerBox"></div>
+    <div class="loginWrap">
+        <div class="logBox">
+            <?php
+                if(!$userid){        
+            
+            ?>
 
-      <a href="/gold/pages/login/login_form.php">LOGIN</a>
-      <a href="/gold/pages/login/join_form.php">JOIN US</a>
-      
-      <!-- <a href="#">ADMIN</a> -->
-      <?php
-        }else {
-          if($userlevel==1){
-      ?>
-        <a href="/gold/php_process/login/logout.php">LOGOUT</a>
-        <a href="#"><?=$userid?>[<?=$userpoint?>]</a>
-        <a href="/gold/pages/admin/admin.php">ADMIN</a>
+            <a href="/gold/pages/login/login_form.php">LOGIN</a>
+            <a href="/gold/pages/login/join_form.php">JOIN US</a>
+            
+            <!-- <a href="#">ADMIN</a> -->
+            <?php
+                }else {
+                if($userlevel==1){
+            ?>
+                <a href="/gold/php_process/login/logout.php">LOGOUT</a>
+                <a href="#"><?=$userid?>[<?=$userpoint?>]</a>
+                <a href="/gold/pages/admin/admin.php">ADMIN</a>
 
-        <?php
-          } else{     
-        ?>
+                <?php
+                } else{     
+                ?>
 
-        <a href="/gold/php_process/login/logout.php">LOGOUT</a>
-        <a href="#"><?=$userid?>[<?=$userpoint?>]</a>
-      
-      <?php
-          }
-        } 
-      ?>  
+                <a href="/gold/php_process/login/logout.php">LOGOUT</a>
+                <a href="#"><?=$userid?>[<?=$userpoint?>]</a>
+            
+            <?php
+                }
+                } 
+            ?>  
 
+        </div>
     </div>
-  </div>
-  <div class="gnb">
-    <ul class="clear">
-      <li class="active"><a href="/gold/index.php?key=0">HOME</a></li>
-      <li><a href="/gold/pages/design/design.php">Artwork</a></li>
-      <li><a href="/gold/pages/web/web.php">Brush</a></li>
-      <li><a href="/gold/pages/app/app.php">Pen</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="/gold/pages/qna/qna.php">Q&A</a></li>
-    </ul>
-    <div class="mobileMenu">
-      <i class="fa fa-bars"></i>
+    <div class="gnb">
+        <ul class="clear">
+            <li class="active"><a href="/gold/index.php?key=0">HOME</a></li>
+            <li><a href="/gold/pages/design/design.php">Artwork</a></li>
+            <li><a href="/gold/pages/web/web.php">Brush</a></li>
+            <li><a href="/gold/pages/app/app.php">Pen</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="/gold/pages/qna/qna.php">Q&A</a></li>
+        </ul>
+        <div class="mobileMenu">
+            <i class="fa fa-bars"></i>
+        </div>
     </div>
-  </div>
 </div>
 <!-- end of top main -->
 
@@ -115,8 +110,6 @@
   }else if(pathname.includes('qna')){
     gnbLi[5].classList.add('active');
   }
-
-
-  // console.log(gnbLi);
+    // console.log(gnbLi);
    
 </script>

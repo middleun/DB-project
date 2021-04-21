@@ -64,7 +64,7 @@
 
                 <!-- app input contents form -->
                 <div class="designInputForm appInputForm webDesignInput ">
-                    <form action="/gold/php_process/pages/app_insert.php" method="post" name="app_form" enctype="multipart/form-data">
+                    <form action="/gold/php_process/pages/app_insert.php" method="post" name="app_form" enctype="multipart/form-data" class="clear">
                         <div class="titleSer clear">
                             <p class="title_input">
                                 <label for="title">Title</label>
