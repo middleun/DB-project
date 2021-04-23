@@ -50,7 +50,7 @@
                     <span class="memLevel"><input type="text" value="<?=$mem_result_level?>" name="level"></span>
                     <span class="memPoint"><input type="text" value="<?=$mem_result_point?>" name="point"></span>
                     <span class="memUpdate"><button type="submit">수정</button></span>
-                    <span class="memDelete"><button type="button" onclick="location.href='/gold/php_process/pages/mem_delete.php?num=<?=$mem_result_num?>'"><i class="fa fa-remove"></i></button></span>
+                    <span class="memDelete"><button type="button" onclick="location.href='/gold/php_process/pages/mem_delete.php?num=<?=$mem_result_num?>'"><i class="fas fa-trash-alt"></i></button></span>
                                             
 
             
