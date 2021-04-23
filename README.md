@@ -4,11 +4,11 @@
 
 데이터베이스를 활용해 제작한 사이트입니다.
 
-# 1. 주요화면
+## ✨ 주요화면
 
 ---
 
-# 2. 사이트 요약
+## ✨ 사이트 요약
 
 **#로그인 #회원가입 #QNA게시판  #자료업로드**
 
@@ -18,7 +18,7 @@
 
 ---
 
-# 3. 사이트 전체  구조
+## ✨ 사이트 전체  구조
 
 ![my_schedule_1.png](img/readme/db_flowchart.png)
 
@@ -26,24 +26,24 @@
 
 ---
 
-# 4. 사용 언어
+## ✨ 사용 언어
 
-### ✔️ HTML5
+#### 📌 HTML5
 
-### ✔️CSS3
+#### 📌 CSS3
 
-### ✔️ Javascript
+#### 📌 Javascript
 
-### ✔️ PHP
+#### 📌 PHP
 
-### ✔️ Maria DB
+#### 📌 Maria DB
 
 ---
 
-# 5. 사용 프레임워크 및 플러그인
+## ✨ 사용 프레임워크 및 플러그인
 
-jQuery
+🏷️ jQuery
 
-light slider
+🏷️ light slider
 
 ---
