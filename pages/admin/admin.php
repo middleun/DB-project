@@ -109,7 +109,9 @@
                                     <span class="msgTit"><a href="/gold/pages/admin/admin_view.php?num=<?=$msg_num?>"><?=$msg_tit?></a></span>
                                     <span class="msgReg"><?=$msg_reg?></span>
                                     <span class="msgEmail"><?=$msg_email?></span>
-                                    <span class="msgDelete"><a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>"><i class="fa fa-remove"></i></a></span>
+                                    <span class="msgDelete"><a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>"
+                                    onclick="return msgDel();">
+                                    <i class="fas fa-trash-alt"></i></a></span>
                                 </li>    
                                 
                                 <?php
@@ -128,7 +130,7 @@
                                     </select>
                                     <input type="text" name="adminSearchInput" placeholder="검색어를 입력해주세요"
                                     class="adminSearchInput">
-                                    <button type="button" class="adminSearchBtn"><i class="fa fa-search" onclick="admin_search_check()"
+                                    <button type="button" class="adminSearchBtn"><i class="fas fa-search" onclick="admin_search_check()"
                                     ></i></button>
                                     <script>
                                         function admin_search_check(){
@@ -186,8 +188,8 @@
                                         <span class="memName"><?=$mem_name?></span>
                                         <span class="memLevel"><input type="text" value="<?=$mem_level?>" name="level"></span>
                                         <span class="memPoint"><input type="text" value="<?=$mem_point?>" name="point"></span>
-                                        <span class="memUpdate"><button type="submit">수정</button></span>
-                                        <span class="memDelete"><button type="button" onclick="location.href='/gold/php_process/pages/mem_delete.php?num=<?=$mem_num?>'"><i class="fa fa-remove"></i></button></span>
+                                        <span class="memUpdate"><button type="submit"><i class="fas fa-edit"></i></button></span>
+                                        <span class="memDelete"><button type="button" onclick="memDel()"><i class="fas fa-trash-alt"></i></button></span>
                                     </form>                              
 
                                     
@@ -208,7 +210,7 @@
                                     </select>
                                     <input type="text" name="memberSearchInput" placeholder="검색어를 입력해주세요"
                                     class="adminSearchInput">
-                                    <button type="button" class="adminSearchBtn"><i class="fa fa-search" onclick="member_search_check()"
+                                    <button type="button" class="adminSearchBtn"><i class="fas fa-search" onclick="member_search_check()"
                                     ></i></button>
                                     <script>
                                         function member_search_check(){
@@ -313,7 +315,7 @@
                                     <input type="hidden" name="key" value="qna_result">
                                     <input type="text" name="qnaSearchInput" placeholder="검색어를 입력해주세요"
                                     class="adminSearchInput">
-                                    <button type="button" class="adminSearchBtn"><i class="fa fa-search" onclick="qna_search_check()"
+                                    <button type="button" class="adminSearchBtn"><i class="fas fa-search" onclick="qna_search_check()"
                                     ></i></button>
                                     <script>
                                         function qna_search_check(){
@@ -362,6 +364,22 @@
         <script src="/gold/js/custom.js"></script>
         <script src="/gold/js/web_design_page.js"></script>
         <script src="/gold/js/admin.js"></script>
+        <script>
+            // msg tab delete button confirm
+            function msgDel(){
+                return confirm("정말로 삭제하시겠습니까?");
+            }
+
+            function memDel(){
+                let confirmCheck=confirm('정말로 삭제하시겠습니까?')
+                if(confirmCheck==false){
+                    return false;
+                }else{
+                    location.href='/gold/php_process/pages/mem_delete.php?num=<?=$mem_num?>'
+                }
+
+            };
+        </script>
 
 
 

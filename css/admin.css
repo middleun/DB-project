@@ -38,7 +38,7 @@ padding:10px 40px; transition:all 0.4s; color:var(--main-color); cursor: pointer
 .admin .adminTable li.adminTitle span{color:#fff;}
 .admin .adminTable li.adminContents span,
 .admin .adminTable li.adminContents span a{color: #838383;}
-.admin .adminTable li.adminContents span.msgDelete a{background:var(--main-color); color:#fff; padding:3px 10px; font-size:12px;}
+.admin .adminTable li.adminContents span.msgDelete a{color:var(--main-color); font-size:14px;}
 
 
 .admin .adminTable li.adminContents:last-child{border-bottom: 1px solid var(--main-color);}
@@ -68,8 +68,8 @@ padding:10px 40px; transition:all 0.4s; color:var(--main-color); cursor: pointer
 color:#838383; text-align: center; padding: 3px 0;}
 
 .admin .memberTab li span.memUpdate button,
-.admin .memberTab li span.memDelete button{outline:0; background:var(--main-color); color:#fff; padding:3px 10px; font-size:12px;
-border:1px solid var(--main-color); cursor: pointer;}
+.admin .memberTab li span.memDelete button{outline:0; background:none;color:var(--main-color); font-size:14px;
+border:none; cursor: pointer;}
 
 /************* admin page qna Table style 
 **********************************************/

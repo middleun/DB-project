@@ -16,4 +16,6 @@ $(function(){
         $(".adminTabs button").eq(0).trigger("click");
     };
     adminTab();
+    
+           
 });

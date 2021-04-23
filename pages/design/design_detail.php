@@ -174,7 +174,17 @@
 
 
         <script>
-            $(function(){
+            $(function(){      
+                //confirm alert when delete button click
+                confirmDel(){            
+                    let confirmCheck=confirm('정말로 삭제하시겠습니까?')
+                    if(confirmCheck==false){
+                        return false;
+                    }else{                 
+                        location.href='/gold/php_process/pages/design_detail_delete.php?num=<?=$design_detail_num?>';
+                    }
+                };           
+
                 // image navigation click
                 $(".imgNav>a").click(function(e){
                     e.preventDefault();
@@ -194,15 +204,7 @@
                     cutTxtBox.eq(i).find("em").text(allTxt.substr(0, 60));
                 };
 
-                //confirm alert when delete button click    
-                function confirmDel(){            
-                    let confirmCheck=confirm('정말로 삭제하시겠습니까?')
-                    if(confirmCheck==false){
-                        return false;
-                    }else{                 
-                        location.href='/gold/php_process/pages/design_detail_delete.php?num=<?=$design_detail_num?>';
-                    }
-                };                  
+                                 
                 
 
             });
